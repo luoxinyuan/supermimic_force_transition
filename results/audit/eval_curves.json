@@ -1,0 +1,1505 @@
+[
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 4000,
+"hours": 0.4175,
+"norm_return": 0.512,
+"failed": 13,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 8000,
+"hours": 0.7262,
+"norm_return": 0.6778,
+"failed": 10,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 12000,
+"hours": 1.0344,
+"norm_return": 0.7556,
+"failed": 7,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 16000,
+"hours": 1.3425,
+"norm_return": 0.8333,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 20000,
+"hours": 1.6505,
+"norm_return": 0.8627,
+"failed": 2,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 24000,
+"hours": 1.9581,
+"norm_return": 0.8781,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 28000,
+"hours": 2.2654,
+"norm_return": 0.877,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 32000,
+"hours": 2.5719,
+"norm_return": 0.8884,
+"failed": 2,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 36000,
+"hours": 2.8784,
+"norm_return": 0.8953,
+"failed": 2,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 40000,
+"hours": 3.1851,
+"norm_return": 0.9099,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 44000,
+"hours": 3.4916,
+"norm_return": 0.9096,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 48000,
+"hours": 3.7981,
+"norm_return": 0.8995,
+"failed": 2,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 52000,
+"hours": 4.1047,
+"norm_return": 0.9206,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 56000,
+"hours": 4.4111,
+"norm_return": 0.9142,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 60000,
+"hours": 4.7173,
+"norm_return": 0.9264,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 64000,
+"hours": 5.0237,
+"norm_return": 0.9147,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 68000,
+"hours": 5.33,
+"norm_return": 0.9268,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 72000,
+"hours": 5.6362,
+"norm_return": 0.9328,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 76000,
+"hours": 5.9423,
+"norm_return": 0.9229,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 80000,
+"hours": 6.2481,
+"norm_return": 0.9288,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 84000,
+"hours": 6.5537,
+"norm_return": 0.9362,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 88000,
+"hours": 6.8589,
+"norm_return": 0.9366,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 92000,
+"hours": 7.1642,
+"norm_return": 0.9359,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 96000,
+"hours": 7.4693,
+"norm_return": 0.9387,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 100000,
+"hours": 7.7744,
+"norm_return": 0.9406,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 104000,
+"hours": 8.0794,
+"norm_return": 0.942,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 108000,
+"hours": 8.3846,
+"norm_return": 0.9423,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 112000,
+"hours": 8.6898,
+"norm_return": 0.9421,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 116000,
+"hours": 8.9956,
+"norm_return": 0.9433,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 120000,
+"hours": 9.2981,
+"norm_return": 0.9436,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 124000,
+"hours": 9.6027,
+"norm_return": 0.9426,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 128000,
+"hours": 9.9073,
+"norm_return": 0.9441,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 132000,
+"hours": 10.2099,
+"norm_return": 0.9443,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 136000,
+"hours": 10.5119,
+"norm_return": 0.943,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 140000,
+"hours": 10.814,
+"norm_return": 0.9456,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 144000,
+"hours": 11.1159,
+"norm_return": 0.9451,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 148000,
+"hours": 11.4178,
+"norm_return": 0.9474,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 152000,
+"hours": 11.72,
+"norm_return": 0.9469,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"iteration": 155680,
+"hours": 12.0,
+"norm_return": 0.9463,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 572,
+"hours": 0.5,
+"norm_return": 0.2402,
+"failed": 25,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 1119,
+"hours": 1.0004,
+"norm_return": 0.3091,
+"failed": 23,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 1654,
+"hours": 1.5003,
+"norm_return": 0.3329,
+"failed": 23,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 2190,
+"hours": 2.0008,
+"norm_return": 0.3564,
+"failed": 22,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 2726,
+"hours": 2.5001,
+"norm_return": 0.3481,
+"failed": 24,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 3266,
+"hours": 3.0002,
+"norm_return": 0.3588,
+"failed": 23,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 3807,
+"hours": 3.5002,
+"norm_return": 0.385,
+"failed": 20,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 4349,
+"hours": 4.0007,
+"norm_return": 0.4148,
+"failed": 19,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 4890,
+"hours": 4.5003,
+"norm_return": 0.413,
+"failed": 20,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 5433,
+"hours": 5.0006,
+"norm_return": 0.4401,
+"failed": 17,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 5976,
+"hours": 5.5005,
+"norm_return": 0.4347,
+"failed": 16,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 6519,
+"hours": 6.0009,
+"norm_return": 0.4347,
+"failed": 17,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 7062,
+"hours": 6.5009,
+"norm_return": 0.4505,
+"failed": 16,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 7605,
+"hours": 7.0003,
+"norm_return": 0.4305,
+"failed": 16,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 8150,
+"hours": 7.5002,
+"norm_return": 0.4683,
+"failed": 14,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 8694,
+"hours": 8.0,
+"norm_return": 0.4697,
+"failed": 14,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 9239,
+"hours": 8.5003,
+"norm_return": 0.4759,
+"failed": 14,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 9784,
+"hours": 9.0,
+"norm_return": 0.482,
+"failed": 13,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 10330,
+"hours": 9.5002,
+"norm_return": 0.4741,
+"failed": 14,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 10886,
+"hours": 10.0007,
+"norm_return": 0.4793,
+"failed": 14,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 11440,
+"hours": 10.5009,
+"norm_return": 0.4633,
+"failed": 16,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 11996,
+"hours": 11.0008,
+"norm_return": 0.4829,
+"failed": 14,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 12553,
+"hours": 11.5007,
+"norm_return": 0.4845,
+"failed": 14,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 13110,
+"hours": 12.0003,
+"norm_return": 0.4915,
+"failed": 12,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 13662,
+"hours": 12.5001,
+"norm_return": 0.4977,
+"failed": 13,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 14211,
+"hours": 13.0008,
+"norm_return": 0.4916,
+"failed": 13,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 14758,
+"hours": 13.5002,
+"norm_return": 0.4993,
+"failed": 10,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 15307,
+"hours": 14.0008,
+"norm_return": 0.4997,
+"failed": 11,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 15853,
+"hours": 14.5,
+"norm_return": 0.5217,
+"failed": 9,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 16400,
+"hours": 15.0003,
+"norm_return": 0.5253,
+"failed": 7,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 16946,
+"hours": 15.5005,
+"norm_return": 0.534,
+"failed": 8,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 17491,
+"hours": 16.0003,
+"norm_return": 0.5506,
+"failed": 6,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 18037,
+"hours": 16.5001,
+"norm_return": 0.5245,
+"failed": 8,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 18584,
+"hours": 17.0002,
+"norm_return": 0.5523,
+"failed": 8,
+"clips": 40
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"iteration": 19132,
+"hours": 17.5007,
+"norm_return": 0.5226,
+"failed": 9,
+"clips": 40
+},
+{
+"run": "abl_H8_critic_true",
+"label": "H=8, critic",
+"iteration": 8000,
+"hours": 0.5732,
+"norm_return": 0.4409,
+"failed": 21,
+"clips": 40
+},
+{
+"run": "abl_H8_critic_true",
+"label": "H=8, critic",
+"iteration": 16000,
+"hours": 1.0038,
+"norm_return": 0.4827,
+"failed": 17,
+"clips": 40
+},
+{
+"run": "abl_H8_critic_true",
+"label": "H=8, critic",
+"iteration": 24000,
+"hours": 1.4461,
+"norm_return": 0.4644,
+"failed": 18,
+"clips": 40
+},
+{
+"run": "abl_H8_critic_true",
+"label": "H=8, critic",
+"iteration": 32000,
+"hours": 1.8752,
+"norm_return": 0.2815,
+"failed": 25,
+"clips": 40
+},
+{
+"run": "abl_H8_critic_true",
+"label": "H=8, critic",
+"iteration": 40000,
+"hours": 2.2987,
+"norm_return": -0.0102,
+"failed": 40,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 8000,
+"hours": 0.5884,
+"norm_return": 0.5826,
+"failed": 17,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 16000,
+"hours": 1.0592,
+"norm_return": 0.7694,
+"failed": 4,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 24000,
+"hours": 1.5304,
+"norm_return": 0.7631,
+"failed": 8,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 32000,
+"hours": 2.0008,
+"norm_return": 0.8234,
+"failed": 3,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 40000,
+"hours": 2.471,
+"norm_return": 0.8345,
+"failed": 3,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 48000,
+"hours": 2.9417,
+"norm_return": 0.8764,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 56000,
+"hours": 3.4127,
+"norm_return": 0.8626,
+"failed": 4,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 64000,
+"hours": 3.8832,
+"norm_return": 0.8909,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 72000,
+"hours": 4.3529,
+"norm_return": 0.8956,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 80000,
+"hours": 4.8235,
+"norm_return": 0.8951,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 88000,
+"hours": 5.2934,
+"norm_return": 0.9022,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 96000,
+"hours": 5.7637,
+"norm_return": 0.9054,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"iteration": 100032,
+"hours": 6.0,
+"norm_return": 0.9012,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_false",
+"label": "H=16, no critic",
+"iteration": 8000,
+"hours": 0.5539,
+"norm_return": 0.0196,
+"failed": 40,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_false",
+"label": "H=16, no critic",
+"iteration": 16000,
+"hours": 0.9901,
+"norm_return": 0.0277,
+"failed": 40,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_false",
+"label": "H=16, no critic",
+"iteration": 24000,
+"hours": 1.4256,
+"norm_return": 0.0301,
+"failed": 40,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_false",
+"label": "H=16, no critic",
+"iteration": 32000,
+"hours": 1.8614,
+"norm_return": 0.035,
+"failed": 40,
+"clips": 40
+},
+{
+"run": "abl_H16_critic_false",
+"label": "H=16, no critic",
+"iteration": 40000,
+"hours": 2.2866,
+"norm_return": 0.0323,
+"failed": 40,
+"clips": 40
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"iteration": 8000,
+"hours": 0.5581,
+"norm_return": 0.4834,
+"failed": 26,
+"clips": 40
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"iteration": 16000,
+"hours": 1.1141,
+"norm_return": 0.5759,
+"failed": 21,
+"clips": 40
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"iteration": 24000,
+"hours": 1.6684,
+"norm_return": 0.6293,
+"failed": 21,
+"clips": 40
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"iteration": 32000,
+"hours": 2.2222,
+"norm_return": 0.7032,
+"failed": 14,
+"clips": 40
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"iteration": 40000,
+"hours": 2.7746,
+"norm_return": 0.7183,
+"failed": 17,
+"clips": 40
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"iteration": 48000,
+"hours": 3.3285,
+"norm_return": 0.8307,
+"failed": 9,
+"clips": 40
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"iteration": 56000,
+"hours": 3.8823,
+"norm_return": 0.8989,
+"failed": 3,
+"clips": 40
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"iteration": 64000,
+"hours": 4.4348,
+"norm_return": 0.8318,
+"failed": 7,
+"clips": 40
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"iteration": 72000,
+"hours": 4.9869,
+"norm_return": 0.8984,
+"failed": 3,
+"clips": 40
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"iteration": 80000,
+"hours": 5.5419,
+"norm_return": 0.7755,
+"failed": 12,
+"clips": 40
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"iteration": 86636,
+"hours": 6.0,
+"norm_return": 0.8233,
+"failed": 10,
+"clips": 40
+},
+{
+"run": "abl_H64_critic_true",
+"label": "H=64, critic",
+"iteration": 8000,
+"hours": 1.189,
+"norm_return": 0.6326,
+"failed": 11,
+"clips": 40
+},
+{
+"run": "abl_H64_critic_true",
+"label": "H=64, critic",
+"iteration": 16000,
+"hours": 2.2513,
+"norm_return": 0.799,
+"failed": 3,
+"clips": 40
+},
+{
+"run": "abl_H64_critic_true",
+"label": "H=64, critic",
+"iteration": 24000,
+"hours": 3.3117,
+"norm_return": 0.8436,
+"failed": 3,
+"clips": 40
+},
+{
+"run": "abl_H64_critic_true",
+"label": "H=64, critic",
+"iteration": 32000,
+"hours": 4.3647,
+"norm_return": 0.866,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "abl_H64_critic_true",
+"label": "H=64, critic",
+"iteration": 40000,
+"hours": 5.4148,
+"norm_return": 0.9059,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "abl_H64_critic_true",
+"label": "H=64, critic",
+"iteration": 44460,
+"hours": 6.0,
+"norm_return": 0.9139,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "f4b_smimic_wrs",
+"label": "SuperMimic, walk/run/sprint",
+"iteration": 8000,
+"hours": 0.7713,
+"norm_return": 0.8351,
+"failed": 2,
+"clips": 18
+},
+{
+"run": "f4b_smimic_wrs",
+"label": "SuperMimic, walk/run/sprint",
+"iteration": 16000,
+"hours": 1.4308,
+"norm_return": 0.9022,
+"failed": 1,
+"clips": 18
+},
+{
+"run": "f4b_smimic_wrs",
+"label": "SuperMimic, walk/run/sprint",
+"iteration": 24000,
+"hours": 2.0893,
+"norm_return": 0.9295,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "f4b_smimic_wrs",
+"label": "SuperMimic, walk/run/sprint",
+"iteration": 32000,
+"hours": 2.7478,
+"norm_return": 0.9393,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "f4b_smimic_wrs",
+"label": "SuperMimic, walk/run/sprint",
+"iteration": 40000,
+"hours": 3.4067,
+"norm_return": 0.9434,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "f4b_smimic_wrs",
+"label": "SuperMimic, walk/run/sprint",
+"iteration": 48000,
+"hours": 4.0636,
+"norm_return": 0.9371,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "f4b_smimic_wrs",
+"label": "SuperMimic, walk/run/sprint",
+"iteration": 56000,
+"hours": 4.7208,
+"norm_return": 0.9472,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "f4b_smimic_wrs",
+"label": "SuperMimic, walk/run/sprint",
+"iteration": 59410,
+"hours": 5.0001,
+"norm_return": 0.9483,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "f4b_ppowm_16kx32",
+"label": "PPO-WM 16k\u00d732, walk/run/sprint",
+"iteration": 8000,
+"hours": 3.0458,
+"norm_return": 0.4923,
+"failed": 5,
+"clips": 18
+},
+{
+"run": "f4b_ppowm_16kx32",
+"label": "PPO-WM 16k\u00d732, walk/run/sprint",
+"iteration": 13343,
+"hours": 5.0009,
+"norm_return": 0.5225,
+"failed": 4,
+"clips": 18
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 4000,
+"hours": 0.4734,
+"norm_return": 0.5659,
+"failed": 16,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 8000,
+"hours": 0.8372,
+"norm_return": 0.8047,
+"failed": 4,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 12000,
+"hours": 1.2003,
+"norm_return": 0.7976,
+"failed": 5,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 16000,
+"hours": 1.5645,
+"norm_return": 0.8584,
+"failed": 3,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 20000,
+"hours": 1.9287,
+"norm_return": 0.895,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 24000,
+"hours": 2.292,
+"norm_return": 0.8908,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 28000,
+"hours": 2.6557,
+"norm_return": 0.9077,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 32000,
+"hours": 3.0189,
+"norm_return": 0.9117,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 36000,
+"hours": 3.3815,
+"norm_return": 0.9247,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 40000,
+"hours": 3.7442,
+"norm_return": 0.9157,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 44000,
+"hours": 4.1069,
+"norm_return": 0.9257,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 48000,
+"hours": 4.4698,
+"norm_return": 0.9323,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"iteration": 52000,
+"hours": 4.8319,
+"norm_return": 0.9333,
+"failed": 0,
+"clips": 40
+},
+{
+"run": "abl_H128_critic_true",
+"label": "H=128, critic",
+"iteration": 8000,
+"hours": 2.6891,
+"norm_return": 0.4604,
+"failed": 15,
+"clips": 40
+},
+{
+"run": "abl_H64_critic_false",
+"label": "H=64, no critic",
+"iteration": 8000,
+"hours": 0.997,
+"norm_return": 0.5917,
+"failed": 20,
+"clips": 40
+},
+{
+"run": "abl_H64_critic_false",
+"label": "H=64, no critic",
+"iteration": 16000,
+"hours": 1.8891,
+"norm_return": 0.8058,
+"failed": 7,
+"clips": 40
+},
+{
+"run": "abl_H64_critic_false",
+"label": "H=64, no critic",
+"iteration": 24000,
+"hours": 2.7819,
+"norm_return": 0.7992,
+"failed": 9,
+"clips": 40
+},
+{
+"run": "abl_H64_critic_false",
+"label": "H=64, no critic",
+"iteration": 32000,
+"hours": 3.6711,
+"norm_return": 0.9209,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "abl_H64_critic_false",
+"label": "H=64, no critic",
+"iteration": 40000,
+"hours": 4.5613,
+"norm_return": 0.9197,
+"failed": 1,
+"clips": 40
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"iteration": 8000,
+"hours": 1.0899,
+"norm_return": 0.8093,
+"failed": 3,
+"clips": 18
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"iteration": 16000,
+"hours": 2.0708,
+"norm_return": 0.9039,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"iteration": 24000,
+"hours": 3.1378,
+"norm_return": 0.9221,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"iteration": 32000,
+"hours": 4.1675,
+"norm_return": 0.9315,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"iteration": 40000,
+"hours": 5.0467,
+"norm_return": 0.9397,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"iteration": 48000,
+"hours": 5.9058,
+"norm_return": 0.9319,
+"failed": 1,
+"clips": 18
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"iteration": 56000,
+"hours": 6.8449,
+"norm_return": 0.9424,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"iteration": 64000,
+"hours": 7.774,
+"norm_return": 0.9482,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"iteration": 72000,
+"hours": 8.6696,
+"norm_return": 0.949,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"iteration": 80000,
+"hours": 9.5632,
+"norm_return": 0.9355,
+"failed": 1,
+"clips": 18
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"iteration": 88000,
+"hours": 10.4538,
+"norm_return": 0.9541,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 8000,
+"hours": 1.011,
+"norm_return": 0.8098,
+"failed": 2,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 16000,
+"hours": 1.8768,
+"norm_return": 0.8926,
+"failed": 2,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 24000,
+"hours": 2.7719,
+"norm_return": 0.8959,
+"failed": 2,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 32000,
+"hours": 3.6861,
+"norm_return": 0.9292,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 40000,
+"hours": 4.5262,
+"norm_return": 0.9366,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 48000,
+"hours": 5.2796,
+"norm_return": 0.92,
+"failed": 1,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 56000,
+"hours": 6.0345,
+"norm_return": 0.9424,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 64000,
+"hours": 6.8094,
+"norm_return": 0.944,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 72000,
+"hours": 7.579,
+"norm_return": 0.9495,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 80000,
+"hours": 8.3512,
+"norm_return": 0.9453,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 88000,
+"hours": 9.121,
+"norm_return": 0.9398,
+"failed": 1,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 96000,
+"hours": 9.8921,
+"norm_return": 0.9525,
+"failed": 0,
+"clips": 18
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"iteration": 100000,
+"hours": 10.2863,
+"norm_return": 0.9516,
+"failed": 0,
+"clips": 18
+}
+]

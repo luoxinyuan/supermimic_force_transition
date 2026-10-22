@@ -1,0 +1,3987 @@
+[
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1048576.0,
+"train_return": 0.0136
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 2097152.0,
+"train_return": 0.0239
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 3145728.0,
+"train_return": 0.022
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 4194304.0,
+"train_return": 0.0246
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 5242880.0,
+"train_return": 0.019
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 6291456.0,
+"train_return": 0.0193
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 7340032.0,
+"train_return": 0.0208
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 8388608.0,
+"train_return": 0.0229
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 9437184.0,
+"train_return": 0.0233
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 10485760.0,
+"train_return": 0.0238
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 11534336.0,
+"train_return": 0.0244
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 12582912.0,
+"train_return": 0.0253
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 13631488.0,
+"train_return": 0.0252
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 14680064.0,
+"train_return": 0.0245
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 15728640.0,
+"train_return": 0.0252
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 16777216.0,
+"train_return": 0.0254
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 17825792.0,
+"train_return": 0.0258
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 18874368.0,
+"train_return": 0.0268
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 19922944.0,
+"train_return": 0.027
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 20971520.0,
+"train_return": 0.0268
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 22020096.0,
+"train_return": 0.025
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 23592960.0,
+"train_return": 0.0235
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 24641536.0,
+"train_return": 0.0243
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 26214400.0,
+"train_return": 0.0299
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 27787264.0,
+"train_return": 0.0378
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 29360128.0,
+"train_return": 0.04
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 30932992.0,
+"train_return": 0.0393
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 33030144.0,
+"train_return": 0.0377
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 35127296.0,
+"train_return": 0.0379
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 36700160.0,
+"train_return": 0.047
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 39321600.0,
+"train_return": 0.1161
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 41418752.0,
+"train_return": 0.1903
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 44040192.0,
+"train_return": 0.2771
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 46661632.0,
+"train_return": 0.3443
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 49283072.0,
+"train_return": 0.3683
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 51904512.0,
+"train_return": 0.3631
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 55050240.0,
+"train_return": 0.3453
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 58195968.0,
+"train_return": 0.3263
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 61865984.0,
+"train_return": 0.3086
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 65536000.0,
+"train_return": 0.3546
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 69206016.0,
+"train_return": 0.4122
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 73400320.0,
+"train_return": 0.4776
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 77594624.0,
+"train_return": 0.5214
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 82313216.0,
+"train_return": 0.5101
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 87556096.0,
+"train_return": 0.5049
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 92274688.0,
+"train_return": 0.5311
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 98041856.0,
+"train_return": 0.5659
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 103809024.0,
+"train_return": 0.5883
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 110100480.0,
+"train_return": 0.5939
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 116391936.0,
+"train_return": 0.6101
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 123207680.0,
+"train_return": 0.621
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 130547712.0,
+"train_return": 0.6289
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 138412032.0,
+"train_return": 0.6662
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 146276352.0,
+"train_return": 0.669
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 155189248.0,
+"train_return": 0.6561
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 164626432.0,
+"train_return": 0.6899
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 174063616.0,
+"train_return": 0.6842
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 184549376.0,
+"train_return": 0.6826
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 195559424.0,
+"train_return": 0.7107
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 207093760.0,
+"train_return": 0.7028
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 219152384.0,
+"train_return": 0.7195
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 232259584.0,
+"train_return": 0.7293
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 245891072.0,
+"train_return": 0.731
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 260571136.0,
+"train_return": 0.7485
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 275775488.0,
+"train_return": 0.7508
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 292552704.0,
+"train_return": 0.7576
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 309854208.0,
+"train_return": 0.7678
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 328204288.0,
+"train_return": 0.7727
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 347602944.0,
+"train_return": 0.7822
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 368050176.0,
+"train_return": 0.7915
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 390070272.0,
+"train_return": 0.796
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 413138944.0,
+"train_return": 0.7984
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 437256192.0,
+"train_return": 0.8023
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 463470592.0,
+"train_return": 0.8072
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 490733568.0,
+"train_return": 0.8126
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 520093696.0,
+"train_return": 0.8176
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 551026688.0,
+"train_return": 0.8197
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 583532544.0,
+"train_return": 0.8219
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 618135552.0,
+"train_return": 0.8245
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 654835712.0,
+"train_return": 0.827
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 693633024.0,
+"train_return": 0.8294
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 735051776.0,
+"train_return": 0.8324
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 778567680.0,
+"train_return": 0.8353
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 824705024.0,
+"train_return": 0.8368
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 873463808.0,
+"train_return": 0.8392
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 925368320.0,
+"train_return": 0.84
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 979894272.0,
+"train_return": 0.8415
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1038090240.0,
+"train_return": 0.8427
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1099956224.0,
+"train_return": 0.8441
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1164967936.0,
+"train_return": 0.8456
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1234173952.0,
+"train_return": 0.8467
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1307574272.0,
+"train_return": 0.8495
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1385168896.0,
+"train_return": 0.8516
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1466957824.0,
+"train_return": 0.8521
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1553989632.0,
+"train_return": 0.8533
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1646264320.0,
+"train_return": 0.8539
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1743781888.0,
+"train_return": 0.8548
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1847590912.0,
+"train_return": 0.8568
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 1957167104.0,
+"train_return": 0.8575
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 2073034752.0,
+"train_return": 0.8586
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 2196242432.0,
+"train_return": 0.8598
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 2326265856.0,
+"train_return": 0.8609
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 2464153600.0,
+"train_return": 0.8627
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 2610429952.0,
+"train_return": 0.8645
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 2765619200.0,
+"train_return": 0.8664
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 2929197056.0,
+"train_return": 0.868
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 3103260672.0,
+"train_return": 0.8695
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 3287285760.0,
+"train_return": 0.8711
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 3482320896.0,
+"train_return": 0.8723
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 3688890368.0,
+"train_return": 0.8734
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 3907518464.0,
+"train_return": 0.8748
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 4139778048.0,
+"train_return": 0.876
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 4385144832.0,
+"train_return": 0.8771
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 4645191680.0,
+"train_return": 0.8784
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 4920967168.0,
+"train_return": 0.8794
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 5212995584.0,
+"train_return": 0.8797
+},
+{
+"series": "Paper SuperMimic",
+"imagined_steps": 5521801216.0,
+"train_return": 0.8803
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1048576.0,
+"train_return": -0.0431
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1310720.0,
+"train_return": -0.0426
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1572864.0,
+"train_return": -0.0407
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1835008.0,
+"train_return": -0.0366
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 2097152.0,
+"train_return": -0.032
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 2359296.0,
+"train_return": -0.029
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 2621440.0,
+"train_return": -0.0268
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 2883584.0,
+"train_return": -0.0245
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 3145728.0,
+"train_return": -0.0228
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 3407872.0,
+"train_return": -0.0212
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 3670016.0,
+"train_return": -0.02
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 3932160.0,
+"train_return": -0.0181
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 4194304.0,
+"train_return": -0.0164
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 4456448.0,
+"train_return": -0.0144
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 4718592.0,
+"train_return": -0.0128
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 5111808.0,
+"train_return": -0.0114
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 5373952.0,
+"train_return": -0.0097
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 5767168.0,
+"train_return": -0.0081
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 6160384.0,
+"train_return": -0.0071
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 6553600.0,
+"train_return": -0.0054
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 7077888.0,
+"train_return": -0.0039
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 7471104.0,
+"train_return": -0.0029
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 7995392.0,
+"train_return": -0.0015
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 8519680.0,
+"train_return": -0.0006
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 9175040.0,
+"train_return": 0.0008
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 9699328.0,
+"train_return": 0.0018
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 10354688.0,
+"train_return": 0.003
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 11141120.0,
+"train_return": 0.0042
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 11796480.0,
+"train_return": 0.0053
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 12582912.0,
+"train_return": 0.0063
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 13500416.0,
+"train_return": 0.0074
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 14417920.0,
+"train_return": 0.0085
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 15335424.0,
+"train_return": 0.0094
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 16384000.0,
+"train_return": 0.0105
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 17563648.0,
+"train_return": 0.0117
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 18743296.0,
+"train_return": 0.0128
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 19922944.0,
+"train_return": 0.014
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 21364736.0,
+"train_return": 0.0154
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 22806528.0,
+"train_return": 0.0167
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 24379392.0,
+"train_return": 0.018
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 25952256.0,
+"train_return": 0.0191
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 27787264.0,
+"train_return": 0.0203
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 29622272.0,
+"train_return": 0.0215
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 31588352.0,
+"train_return": 0.0225
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 33816576.0,
+"train_return": 0.0235
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 36044800.0,
+"train_return": 0.025
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 38535168.0,
+"train_return": 0.0264
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 41156608.0,
+"train_return": 0.0281
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 43909120.0,
+"train_return": 0.0297
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 46923776.0,
+"train_return": 0.031
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 50069504.0,
+"train_return": 0.0326
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 53477376.0,
+"train_return": 0.0344
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 57016320.0,
+"train_return": 0.0361
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 60948480.0,
+"train_return": 0.0384
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 65142784.0,
+"train_return": 0.0413
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 69468160.0,
+"train_return": 0.0439
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 74186752.0,
+"train_return": 0.0473
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 79298560.0,
+"train_return": 0.051
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 84672512.0,
+"train_return": 0.0562
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 90439680.0,
+"train_return": 0.0633
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 96468992.0,
+"train_return": 0.0778
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 103022592.0,
+"train_return": 0.1003
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 110100480.0,
+"train_return": 0.1292
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 117571584.0,
+"train_return": 0.1628
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 125566976.0,
+"train_return": 0.1938
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 134086656.0,
+"train_return": 0.2196
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 143130624.0,
+"train_return": 0.2432
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 152829952.0,
+"train_return": 0.2567
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 163315712.0,
+"train_return": 0.2528
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 174325760.0,
+"train_return": 0.2495
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 186253312.0,
+"train_return": 0.2452
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 198836224.0,
+"train_return": 0.2518
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 212336640.0,
+"train_return": 0.2664
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 226754560.0,
+"train_return": 0.2919
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 242221056.0,
+"train_return": 0.3429
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 258605056.0,
+"train_return": 0.3928
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 276168704.0,
+"train_return": 0.4363
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 295043072.0,
+"train_return": 0.4582
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 315097088.0,
+"train_return": 0.4559
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 336461824.0,
+"train_return": 0.4591
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 359268352.0,
+"train_return": 0.4634
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 383647744.0,
+"train_return": 0.4792
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 409731072.0,
+"train_return": 0.4951
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 437649408.0,
+"train_return": 0.5047
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 467402752.0,
+"train_return": 0.5122
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 499122176.0,
+"train_return": 0.5211
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 533069824.0,
+"train_return": 0.5265
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 569245696.0,
+"train_return": 0.5325
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 607911936.0,
+"train_return": 0.5368
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 649199616.0,
+"train_return": 0.5404
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 693370880.0,
+"train_return": 0.5512
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 740425728.0,
+"train_return": 0.5567
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 790757376.0,
+"train_return": 0.5627
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 844496896.0,
+"train_return": 0.5705
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 901775360.0,
+"train_return": 0.577
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 963117056.0,
+"train_return": 0.5872
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1028521984.0,
+"train_return": 0.5946
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1098383360.0,
+"train_return": 0.5983
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1173094400.0,
+"train_return": 0.6012
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1252786176.0,
+"train_return": 0.6075
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1337982976.0,
+"train_return": 0.6113
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1428815872.0,
+"train_return": 0.6166
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1525940224.0,
+"train_return": 0.6237
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1629618176.0,
+"train_return": 0.6332
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1740374016.0,
+"train_return": 0.6385
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1858600960.0,
+"train_return": 0.6461
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 1984823296.0,
+"train_return": 0.6504
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 2119696384.0,
+"train_return": 0.6544
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 2263744512.0,
+"train_return": 0.6623
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 2417623040.0,
+"train_return": 0.6606
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 2581856256.0,
+"train_return": 0.6635
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 2757361664.0,
+"train_return": 0.665
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 2944663552.0,
+"train_return": 0.6718
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 3144810496.0,
+"train_return": 0.6824
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 3358457856.0,
+"train_return": 0.6895
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 3586654208.0,
+"train_return": 0.6932
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 3830448128.0,
+"train_return": 0.6953
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 4090626048.0,
+"train_return": 0.6971
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 4368629760.0,
+"train_return": 0.6972
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 4665507840.0,
+"train_return": 0.6977
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 4982439936.0,
+"train_return": 0.6967
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 5321129984.0,
+"train_return": 0.6983
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 5682626560.0,
+"train_return": 0.7057
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 6068764672.0,
+"train_return": 0.7121
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 6481117184.0,
+"train_return": 0.72
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 6921519104.0,
+"train_return": 0.7157
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 7391936512.0,
+"train_return": 0.7134
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 7894204416.0,
+"train_return": 0.7133
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 8430551040.0,
+"train_return": 0.7175
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 9003466752.0,
+"train_return": 0.725
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 9615310848.0,
+"train_return": 0.7309
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 10268573696.0,
+"train_return": 0.7341
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 10966401024.0,
+"train_return": 0.7376
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 11711545344.0,
+"train_return": 0.7415
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 12507414528.0,
+"train_return": 0.7451
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 13357285376.0,
+"train_return": 0.7495
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 14264958976.0,
+"train_return": 0.7541
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 15234236416.0,
+"train_return": 0.7545
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 16269443072.0,
+"train_return": 0.7568
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 17375035392.0,
+"train_return": 0.7583
+},
+{
+"series": "Paper PPO-WM 4k x 32",
+"imagined_steps": 18555600896.0,
+"train_return": 0.7615
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1179648.0,
+"train_return": -0.0455
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1572864.0,
+"train_return": -0.0445
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1966080.0,
+"train_return": -0.0386
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 2359296.0,
+"train_return": -0.0349
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 2752512.0,
+"train_return": -0.0322
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 3145728.0,
+"train_return": -0.0304
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 3538944.0,
+"train_return": -0.026
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 3932160.0,
+"train_return": -0.0237
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 4325376.0,
+"train_return": -0.0215
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 4718592.0,
+"train_return": -0.0194
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 5111808.0,
+"train_return": -0.0164
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 5505024.0,
+"train_return": -0.0148
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 5898240.0,
+"train_return": -0.0129
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 6291456.0,
+"train_return": -0.0111
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 6684672.0,
+"train_return": -0.0091
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 7274496.0,
+"train_return": -0.0074
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 7667712.0,
+"train_return": -0.006
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 8257536.0,
+"train_return": -0.004
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 8650752.0,
+"train_return": -0.0029
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 9240576.0,
+"train_return": -0.0014
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 9830400.0,
+"train_return": 0.0001
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 10420224.0,
+"train_return": 0.0014
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 11206656.0,
+"train_return": 0.0025
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 11993088.0,
+"train_return": 0.0042
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 12582912.0,
+"train_return": 0.0053
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 13565952.0,
+"train_return": 0.0071
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 14352384.0,
+"train_return": 0.0082
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 15335424.0,
+"train_return": 0.0094
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 16318464.0,
+"train_return": 0.0106
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 17301504.0,
+"train_return": 0.0116
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 18481152.0,
+"train_return": 0.0128
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 19660800.0,
+"train_return": 0.0142
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 21037056.0,
+"train_return": 0.0154
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 22413312.0,
+"train_return": 0.0165
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 23789568.0,
+"train_return": 0.0178
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 25362432.0,
+"train_return": 0.0189
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 26935296.0,
+"train_return": 0.02
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 28704768.0,
+"train_return": 0.0211
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 30670848.0,
+"train_return": 0.022
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 32636928.0,
+"train_return": 0.0228
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 34799616.0,
+"train_return": 0.0241
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 36962304.0,
+"train_return": 0.0255
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 39321600.0,
+"train_return": 0.0265
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 42074112.0,
+"train_return": 0.0278
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 44630016.0,
+"train_return": 0.0287
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 47579136.0,
+"train_return": 0.03
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 50724864.0,
+"train_return": 0.0312
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 54067200.0,
+"train_return": 0.0327
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 57606144.0,
+"train_return": 0.0345
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 61341696.0,
+"train_return": 0.0363
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 65273856.0,
+"train_return": 0.0385
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 69599232.0,
+"train_return": 0.0412
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 74121216.0,
+"train_return": 0.0453
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 79036416.0,
+"train_return": 0.0509
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 84148224.0,
+"train_return": 0.0575
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 89653248.0,
+"train_return": 0.0662
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 95551488.0,
+"train_return": 0.0793
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 101646336.0,
+"train_return": 0.0999
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 108331008.0,
+"train_return": 0.1249
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 115408896.0,
+"train_return": 0.1489
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 123076608.0,
+"train_return": 0.1713
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 130940928.0,
+"train_return": 0.1928
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 139591680.0,
+"train_return": 0.2095
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 148635648.0,
+"train_return": 0.2292
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 158466048.0,
+"train_return": 0.2399
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 168689664.0,
+"train_return": 0.2486
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 179699712.0,
+"train_return": 0.2604
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 191496192.0,
+"train_return": 0.2664
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 204079104.0,
+"train_return": 0.2728
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 217251840.0,
+"train_return": 0.2741
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 231604224.0,
+"train_return": 0.2758
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 246743040.0,
+"train_return": 0.2955
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 262864896.0,
+"train_return": 0.3355
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 279969792.0,
+"train_return": 0.3931
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 298254336.0,
+"train_return": 0.4465
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 317718528.0,
+"train_return": 0.4781
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 338558976.0,
+"train_return": 0.4824
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 360579072.0,
+"train_return": 0.4785
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 384172032.0,
+"train_return": 0.4795
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 409141248.0,
+"train_return": 0.4878
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 435879936.0,
+"train_return": 0.5007
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 464388096.0,
+"train_return": 0.5124
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 494862336.0,
+"train_return": 0.5181
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 527106048.0,
+"train_return": 0.5213
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 561512448.0,
+"train_return": 0.5275
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 598278144.0,
+"train_return": 0.5364
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 637403136.0,
+"train_return": 0.5526
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 679084032.0,
+"train_return": 0.5588
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 723320832.0,
+"train_return": 0.5686
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 770703360.0,
+"train_return": 0.5742
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 821035008.0,
+"train_return": 0.5811
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 874708992.0,
+"train_return": 0.5915
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 931725312.0,
+"train_return": 0.5976
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 992673792.0,
+"train_return": 0.6035
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1057554432.0,
+"train_return": 0.6088
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1126563840.0,
+"train_return": 0.6158
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1200291840.0,
+"train_return": 0.6214
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1278738432.0,
+"train_return": 0.6277
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1362296832.0,
+"train_return": 0.6259
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1451360256.0,
+"train_return": 0.6302
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1546125312.0,
+"train_return": 0.6347
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1647181824.0,
+"train_return": 0.6407
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1754726400.0,
+"train_return": 0.6509
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1869545472.0,
+"train_return": 0.6596
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 1991639040.0,
+"train_return": 0.6661
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 2121793536.0,
+"train_return": 0.6746
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 2260402176.0,
+"train_return": 0.6798
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 2408251392.0,
+"train_return": 0.6834
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 2565537792.0,
+"train_return": 0.6852
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 2733244416.0,
+"train_return": 0.6841
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 2911764480.0,
+"train_return": 0.6857
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 3102081024.0,
+"train_return": 0.6926
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 3304783872.0,
+"train_return": 0.6998
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 3520856064.0,
+"train_return": 0.7077
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 3750887424.0,
+"train_return": 0.7107
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 3996057600.0,
+"train_return": 0.7111
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 4257153024.0,
+"train_return": 0.7153
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 4535353344.0,
+"train_return": 0.7174
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 4831838208.0,
+"train_return": 0.7226
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 5147590656.0,
+"train_return": 0.7251
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 5483986944.0,
+"train_return": 0.7282
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 5842403328.0,
+"train_return": 0.7291
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 6224216064.0,
+"train_return": 0.7339
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 6630998016.0,
+"train_return": 0.7387
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 7064322048.0,
+"train_return": 0.7447
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 7525957632.0,
+"train_return": 0.7464
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 8017674240.0,
+"train_return": 0.745
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 8541634560.0,
+"train_return": 0.7429
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 9100001280.0,
+"train_return": 0.7441
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 9694543872.0,
+"train_return": 0.749
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 10328211456.0,
+"train_return": 0.7526
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 11003166720.0,
+"train_return": 0.7589
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 11722162176.0,
+"train_return": 0.7615
+},
+{
+"series": "Paper PPO-WM 8k x 24",
+"imagined_steps": 12488343552.0,
+"train_return": 0.7626
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1048576.0,
+"train_return": -0.0455
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1572864.0,
+"train_return": -0.0464
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 2097152.0,
+"train_return": -0.0433
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 2621440.0,
+"train_return": -0.0398
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 3145728.0,
+"train_return": -0.0367
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 3670016.0,
+"train_return": -0.0329
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 4194304.0,
+"train_return": -0.0311
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 4718592.0,
+"train_return": -0.0263
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 5242880.0,
+"train_return": -0.0239
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 5767168.0,
+"train_return": -0.0215
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 6291456.0,
+"train_return": -0.0185
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 6815744.0,
+"train_return": -0.0156
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 7340032.0,
+"train_return": -0.0139
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 7864320.0,
+"train_return": -0.0121
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 8388608.0,
+"train_return": -0.0105
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 8912896.0,
+"train_return": -0.0087
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 9437184.0,
+"train_return": -0.0072
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 9961472.0,
+"train_return": -0.0063
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 10747904.0,
+"train_return": -0.0043
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 11534336.0,
+"train_return": -0.0027
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 12058624.0,
+"train_return": -0.002
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 13107200.0,
+"train_return": 0.0
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 13893632.0,
+"train_return": 0.0012
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 14680064.0,
+"train_return": 0.0021
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 15728640.0,
+"train_return": 0.0034
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 16777216.0,
+"train_return": 0.0047
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 17825792.0,
+"train_return": 0.006
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 19136512.0,
+"train_return": 0.0074
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 20447232.0,
+"train_return": 0.0089
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 21757952.0,
+"train_return": 0.01
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 23068672.0,
+"train_return": 0.0111
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 24641536.0,
+"train_return": 0.0122
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 26214400.0,
+"train_return": 0.0131
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 28049408.0,
+"train_return": 0.0143
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 29884416.0,
+"train_return": 0.0154
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 31981568.0,
+"train_return": 0.0167
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 34078720.0,
+"train_return": 0.018
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 36175872.0,
+"train_return": 0.0192
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 38797312.0,
+"train_return": 0.0205
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 41156608.0,
+"train_return": 0.0215
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 44040192.0,
+"train_return": 0.0225
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 46923776.0,
+"train_return": 0.0234
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 50069504.0,
+"train_return": 0.0247
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 53477376.0,
+"train_return": 0.0261
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 56885248.0,
+"train_return": 0.0273
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 60817408.0,
+"train_return": 0.0286
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 64749568.0,
+"train_return": 0.0298
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 69206016.0,
+"train_return": 0.0312
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 73662464.0,
+"train_return": 0.0329
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 78643200.0,
+"train_return": 0.0341
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 83886080.0,
+"train_return": 0.0365
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 89391104.0,
+"train_return": 0.0394
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 95420416.0,
+"train_return": 0.0422
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 101974016.0,
+"train_return": 0.0464
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 108527616.0,
+"train_return": 0.0502
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 115867648.0,
+"train_return": 0.0547
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 123731968.0,
+"train_return": 0.0616
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 131858432.0,
+"train_return": 0.0712
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 140771328.0,
+"train_return": 0.0874
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 149946368.0,
+"train_return": 0.108
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 160169984.0,
+"train_return": 0.1356
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 170655744.0,
+"train_return": 0.1626
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 182190080.0,
+"train_return": 0.194
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 194248704.0,
+"train_return": 0.2237
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 207355904.0,
+"train_return": 0.2468
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 220987392.0,
+"train_return": 0.2633
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 235929600.0,
+"train_return": 0.2706
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 251658240.0,
+"train_return": 0.2724
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 268435456.0,
+"train_return": 0.2707
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 286261248.0,
+"train_return": 0.2676
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 305397760.0,
+"train_return": 0.264
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 325844992.0,
+"train_return": 0.2676
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 347602944.0,
+"train_return": 0.2916
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 370671616.0,
+"train_return": 0.3378
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 395575296.0,
+"train_return": 0.4002
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 421789696.0,
+"train_return": 0.4587
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 450101248.0,
+"train_return": 0.4975
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 479985664.0,
+"train_return": 0.5077
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 512229376.0,
+"train_return": 0.5069
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 546308096.0,
+"train_return": 0.5004
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 582746112.0,
+"train_return": 0.5016
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 621805568.0,
+"train_return": 0.512
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 663224320.0,
+"train_return": 0.5241
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 707526656.0,
+"train_return": 0.535
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 754712576.0,
+"train_return": 0.5452
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 805044224.0,
+"train_return": 0.5592
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 858783744.0,
+"train_return": 0.5703
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 916193280.0,
+"train_return": 0.5804
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 977272832.0,
+"train_return": 0.5837
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1042546688.0,
+"train_return": 0.5852
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1112276992.0,
+"train_return": 0.5914
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1186463744.0,
+"train_return": 0.5976
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1265893376.0,
+"train_return": 0.6068
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1350303744.0,
+"train_return": 0.6134
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1440481280.0,
+"train_return": 0.6203
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1536688128.0,
+"train_return": 0.6289
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1639186432.0,
+"train_return": 0.641
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1748762624.0,
+"train_return": 0.6473
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1865416704.0,
+"train_return": 0.6503
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 1990197248.0,
+"train_return": 0.6553
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 2122842112.0,
+"train_return": 0.6592
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 2264662016.0,
+"train_return": 0.6659
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 2415919104.0,
+"train_return": 0.6692
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 2577399808.0,
+"train_return": 0.6723
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 2749366272.0,
+"train_return": 0.6734
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 2932867072.0,
+"train_return": 0.6769
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 3128950784.0,
+"train_return": 0.6799
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 3337879552.0,
+"train_return": 0.6848
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 3560701952.0,
+"train_return": 0.6916
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 3798466560.0,
+"train_return": 0.6933
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 4052221952.0,
+"train_return": 0.6967
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 4322754560.0,
+"train_return": 0.7012
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 4611375104.0,
+"train_return": 0.7047
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 4919394304.0,
+"train_return": 0.7109
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 5247860736.0,
+"train_return": 0.7124
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 5598347264.0,
+"train_return": 0.717
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 5972164608.0,
+"train_return": 0.7189
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 6370885632.0,
+"train_return": 0.7277
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 6796345344.0,
+"train_return": 0.735
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 7250378752.0,
+"train_return": 0.7396
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 7734296576.0,
+"train_return": 0.7433
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 8250982400.0,
+"train_return": 0.7437
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 8802009088.0,
+"train_return": 0.7423
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 9389735936.0,
+"train_return": 0.7436
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 10016784384.0,
+"train_return": 0.7485
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 10685775872.0,
+"train_return": 0.7557
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 11399331840.0,
+"train_return": 0.759
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 12160598016.0,
+"train_return": 0.7602
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 12972720128.0,
+"train_return": 0.7593
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 13838843904.0,
+"train_return": 0.7645
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 14763163648.0,
+"train_return": 0.7656
+},
+{
+"series": "Paper PPO-WM 8k x 32",
+"imagined_steps": 15748825088.0,
+"train_return": 0.7691
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 1048576.0,
+"train_return": -0.0471
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 2097152.0,
+"train_return": -0.0457
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 3145728.0,
+"train_return": -0.045
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 4194304.0,
+"train_return": -0.0422
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 5242880.0,
+"train_return": -0.042
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 6291456.0,
+"train_return": -0.0393
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 7340032.0,
+"train_return": -0.0341
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 8388608.0,
+"train_return": -0.0298
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 9437184.0,
+"train_return": -0.0261
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 10485760.0,
+"train_return": -0.0237
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 11534336.0,
+"train_return": -0.0207
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 12582912.0,
+"train_return": -0.0175
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 13631488.0,
+"train_return": -0.0145
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 14680064.0,
+"train_return": -0.0127
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 15728640.0,
+"train_return": -0.0108
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 16777216.0,
+"train_return": -0.0088
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 17825792.0,
+"train_return": -0.0067
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 19398656.0,
+"train_return": -0.0047
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 20971520.0,
+"train_return": -0.0026
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 22544384.0,
+"train_return": -0.0005
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 24117248.0,
+"train_return": 0.0009
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 25690112.0,
+"train_return": 0.0025
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 27787264.0,
+"train_return": 0.0044
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 29884416.0,
+"train_return": 0.0057
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 32505856.0,
+"train_return": 0.0075
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 34603008.0,
+"train_return": 0.0087
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 37224448.0,
+"train_return": 0.0101
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 40370176.0,
+"train_return": 0.0119
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 43515904.0,
+"train_return": 0.0135
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 46661632.0,
+"train_return": 0.0151
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 50331648.0,
+"train_return": 0.0167
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 54001664.0,
+"train_return": 0.0178
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 58195968.0,
+"train_return": 0.0193
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 62390272.0,
+"train_return": 0.0207
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 67108864.0,
+"train_return": 0.0221
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 72351744.0,
+"train_return": 0.0232
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 78118912.0,
+"train_return": 0.0244
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 83886080.0,
+"train_return": 0.0253
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 90177536.0,
+"train_return": 0.0266
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 96993280.0,
+"train_return": 0.0285
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 104333312.0,
+"train_return": 0.0305
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 112721920.0,
+"train_return": 0.0319
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 121110528.0,
+"train_return": 0.0329
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 130547712.0,
+"train_return": 0.0348
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 140509184.0,
+"train_return": 0.037
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 150994944.0,
+"train_return": 0.0405
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 162529280.0,
+"train_return": 0.0434
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 175112192.0,
+"train_return": 0.0476
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 188219392.0,
+"train_return": 0.0539
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 202899456.0,
+"train_return": 0.0611
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 218103808.0,
+"train_return": 0.0689
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 234881024.0,
+"train_return": 0.083
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 252706816.0,
+"train_return": 0.1009
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 272105472.0,
+"train_return": 0.1304
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 293076992.0,
+"train_return": 0.1608
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 315621376.0,
+"train_return": 0.195
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 339738624.0,
+"train_return": 0.2205
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 365428736.0,
+"train_return": 0.2483
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 393740288.0,
+"train_return": 0.2712
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 423624704.0,
+"train_return": 0.2916
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 456130560.0,
+"train_return": 0.3052
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 490733568.0,
+"train_return": 0.3134
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 528482304.0,
+"train_return": 0.3198
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 568852480.0,
+"train_return": 0.3229
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 612368384.0,
+"train_return": 0.3527
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 659554304.0,
+"train_return": 0.4077
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 709885952.0,
+"train_return": 0.4763
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 763887616.0,
+"train_return": 0.5251
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 822607872.0,
+"train_return": 0.5472
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 885522432.0,
+"train_return": 0.5536
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 953155584.0,
+"train_return": 0.5569
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 1026031616.0,
+"train_return": 0.557
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 1104674816.0,
+"train_return": 0.5583
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 1189609472.0,
+"train_return": 0.562
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 1280311296.0,
+"train_return": 0.5718
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 1378353152.0,
+"train_return": 0.5859
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 1483735040.0,
+"train_return": 0.5956
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 1597505536.0,
+"train_return": 0.6051
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 1719664640.0,
+"train_return": 0.6113
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 1851260928.0,
+"train_return": 0.619
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 1992818688.0,
+"train_return": 0.6231
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 2145386496.0,
+"train_return": 0.6277
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 2310012928.0,
+"train_return": 0.6282
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 2486697984.0,
+"train_return": 0.6349
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 2677014528.0,
+"train_return": 0.6505
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 2882011136.0,
+"train_return": 0.6603
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 3102212096.0,
+"train_return": 0.6648
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 3339714560.0,
+"train_return": 0.6621
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 3595567104.0,
+"train_return": 0.6676
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 3870818304.0,
+"train_return": 0.6761
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 4167041024.0,
+"train_return": 0.6844
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 4485808128.0,
+"train_return": 0.6898
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 4829216768.0,
+"train_return": 0.6984
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 5198839808.0,
+"train_return": 0.7007
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 5596774400.0,
+"train_return": 0.7078
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 6025117696.0,
+"train_return": 0.7099
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 6486491136.0,
+"train_return": 0.7156
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 6982991872.0,
+"train_return": 0.7228
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 7517241344.0,
+"train_return": 0.7293
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 8092909568.0,
+"train_return": 0.7385
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 8712093696.0,
+"train_return": 0.7401
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 9378988032.0,
+"train_return": 0.7482
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 10097262592.0,
+"train_return": 0.7527
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 10870063104.0,
+"train_return": 0.7643
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 11702108160.0,
+"train_return": 0.7634
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 12598116352.0,
+"train_return": 0.7688
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 13562281984.0,
+"train_return": 0.7709
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 14600372224.0,
+"train_return": 0.7782
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 15718154240.0,
+"train_return": 0.781
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 16920870912.0,
+"train_return": 0.7814
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 18216386560.0,
+"train_return": 0.7873
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 19610992640.0,
+"train_return": 0.7891
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 21112029184.0,
+"train_return": 0.7926
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 22727884800.0,
+"train_return": 0.7949
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 24467996672.0,
+"train_return": 0.7989
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 26340753408.0,
+"train_return": 0.8051
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 28357165056.0,
+"train_return": 0.8078
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 30527717376.0,
+"train_return": 0.8125
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 32864468992.0,
+"train_return": 0.8162
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 35380002816.0,
+"train_return": 0.8199
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 38088474624.0,
+"train_return": 0.823
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 41004040192.0,
+"train_return": 0.8249
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 44142952448.0,
+"train_return": 0.8255
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 47521988608.0,
+"train_return": 0.8281
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 51159498752.0,
+"train_return": 0.833
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 55075930112.0,
+"train_return": 0.8372
+},
+{
+"series": "Paper PPO-WM 16k x 32",
+"imagined_steps": 59291729920.0,
+"train_return": 0.8406
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 5242880.0,
+"train_return": 0.0385
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 31457280.0,
+"train_return": 0.0425
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 57671680.0,
+"train_return": 0.1061
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 83886080.0,
+"train_return": 0.2943
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 110100480.0,
+"train_return": 0.3746
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 136314880.0,
+"train_return": 0.3865
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 162529280.0,
+"train_return": 0.4362
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 188743680.0,
+"train_return": 0.4547
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 214958080.0,
+"train_return": 0.563
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 241172480.0,
+"train_return": 0.5637
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 267386880.0,
+"train_return": 0.6128
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 293601280.0,
+"train_return": 0.6545
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 319815680.0,
+"train_return": 0.618
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 346030080.0,
+"train_return": 0.5886
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 372244480.0,
+"train_return": 0.663
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 398458880.0,
+"train_return": 0.6115
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 424673280.0,
+"train_return": 0.674
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 450887680.0,
+"train_return": 0.6685
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 477102080.0,
+"train_return": 0.7461
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 503316480.0,
+"train_return": 0.7057
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 529530880.0,
+"train_return": 0.7155
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 555745280.0,
+"train_return": 0.5269
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 581959680.0,
+"train_return": 0.7133
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 608174080.0,
+"train_return": 0.6249
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 634388480.0,
+"train_return": 0.7412
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 660602880.0,
+"train_return": 0.6251
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 686817280.0,
+"train_return": 0.539
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 713031680.0,
+"train_return": 0.6568
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 739246080.0,
+"train_return": 0.6471
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 765460480.0,
+"train_return": 0.7517
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 791674880.0,
+"train_return": 0.7698
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 817889280.0,
+"train_return": 0.606
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 844103680.0,
+"train_return": 0.75
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 870318080.0,
+"train_return": 0.7767
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 896532480.0,
+"train_return": 0.6433
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 922746880.0,
+"train_return": 0.6774
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 948961280.0,
+"train_return": 0.6953
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 975175680.0,
+"train_return": 0.7807
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1001390080.0,
+"train_return": 0.7088
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1027604480.0,
+"train_return": 0.681
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1053818880.0,
+"train_return": 0.7126
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1080033280.0,
+"train_return": 0.6769
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1106247680.0,
+"train_return": 0.7166
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1132462080.0,
+"train_return": 0.7524
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1158676480.0,
+"train_return": 0.7791
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1184890880.0,
+"train_return": 0.703
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1211105280.0,
+"train_return": 0.744
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1237319680.0,
+"train_return": 0.7034
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1263534080.0,
+"train_return": 0.7221
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1289748480.0,
+"train_return": 0.7808
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1315962880.0,
+"train_return": 0.7668
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1342177280.0,
+"train_return": 0.6934
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1368391680.0,
+"train_return": 0.7786
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1394606080.0,
+"train_return": 0.76
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1420820480.0,
+"train_return": 0.7012
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1447034880.0,
+"train_return": 0.8067
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1473249280.0,
+"train_return": 0.737
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1499463680.0,
+"train_return": 0.7516
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1525678080.0,
+"train_return": 0.7843
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1551892480.0,
+"train_return": 0.7405
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1578106880.0,
+"train_return": 0.7867
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1604321280.0,
+"train_return": 0.7749
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1630535680.0,
+"train_return": 0.7031
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1656750080.0,
+"train_return": 0.7307
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1682964480.0,
+"train_return": 0.7797
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1709178880.0,
+"train_return": 0.7185
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1735393280.0,
+"train_return": 0.7484
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1761607680.0,
+"train_return": 0.7243
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1787822080.0,
+"train_return": 0.7319
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1814036480.0,
+"train_return": 0.725
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1840250880.0,
+"train_return": 0.7738
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1866465280.0,
+"train_return": 0.7375
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1892679680.0,
+"train_return": 0.7686
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1918894080.0,
+"train_return": 0.7372
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1945108480.0,
+"train_return": 0.7233
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1971322880.0,
+"train_return": 0.7225
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 1997537280.0,
+"train_return": 0.7695
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2023751680.0,
+"train_return": 0.7708
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2049966080.0,
+"train_return": 0.7589
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2076180480.0,
+"train_return": 0.8052
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2102394880.0,
+"train_return": 0.7747
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2128609280.0,
+"train_return": 0.7957
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2154823680.0,
+"train_return": 0.7753
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2181038080.0,
+"train_return": 0.7391
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2207252480.0,
+"train_return": 0.7975
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2233466880.0,
+"train_return": 0.819
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2259681280.0,
+"train_return": 0.7569
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2285895680.0,
+"train_return": 0.7909
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2312110080.0,
+"train_return": 0.8015
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2338324480.0,
+"train_return": 0.7962
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2364538880.0,
+"train_return": 0.7973
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2390753280.0,
+"train_return": 0.8035
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2416967680.0,
+"train_return": 0.7412
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2443182080.0,
+"train_return": 0.7298
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2469396480.0,
+"train_return": 0.7865
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2495610880.0,
+"train_return": 0.8021
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2521825280.0,
+"train_return": 0.7373
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2548039680.0,
+"train_return": 0.7436
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2574254080.0,
+"train_return": 0.7453
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2600468480.0,
+"train_return": 0.7587
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2626682880.0,
+"train_return": 0.7731
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2652897280.0,
+"train_return": 0.7774
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2679111680.0,
+"train_return": 0.789
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2705326080.0,
+"train_return": 0.8395
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2731540480.0,
+"train_return": 0.7908
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2757754880.0,
+"train_return": 0.7976
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2783969280.0,
+"train_return": 0.7873
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2810183680.0,
+"train_return": 0.7868
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2836398080.0,
+"train_return": 0.7637
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2862612480.0,
+"train_return": 0.7671
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2888826880.0,
+"train_return": 0.7594
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2915041280.0,
+"train_return": 0.7775
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2941255680.0,
+"train_return": 0.7464
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2967470080.0,
+"train_return": 0.7706
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 2993684480.0,
+"train_return": 0.8038
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 3019898880.0,
+"train_return": 0.8251
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 3046113280.0,
+"train_return": 0.7781
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 3072327680.0,
+"train_return": 0.799
+},
+{
+"series": "Ours SuperMimic",
+"imagined_steps": 3098542080.0,
+"train_return": 0.7623
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 10747904.0,
+"train_return": -0.0532
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 115605504.0,
+"train_return": 0.0259
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 220463104.0,
+"train_return": 0.1857
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 325320704.0,
+"train_return": 0.2131
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 430178304.0,
+"train_return": 0.2362
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 535035904.0,
+"train_return": 0.2546
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 639893504.0,
+"train_return": 0.2735
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 744751104.0,
+"train_return": 0.2725
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 849608704.0,
+"train_return": 0.2725
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 954466304.0,
+"train_return": 0.2875
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 1059323904.0,
+"train_return": 0.2931
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 1164181504.0,
+"train_return": 0.2713
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 1269039104.0,
+"train_return": 0.2896
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 1373896704.0,
+"train_return": 0.2759
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 1478754304.0,
+"train_return": 0.2646
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 1583611904.0,
+"train_return": 0.2633
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 1688469504.0,
+"train_return": 0.2734
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 1793327104.0,
+"train_return": 0.2831
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 1898184704.0,
+"train_return": 0.2941
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 2003042304.0,
+"train_return": 0.2853
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 2107899904.0,
+"train_return": 0.2929
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 2212757504.0,
+"train_return": 0.3085
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 2317615104.0,
+"train_return": 0.3091
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 2422472704.0,
+"train_return": 0.3041
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 2527330304.0,
+"train_return": 0.3246
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 2632187904.0,
+"train_return": 0.3405
+},
+{
+"series": "Ours PPO-WM 16k x 32",
+"imagined_steps": 2737045504.0,
+"train_return": 0.3362
+}
+]

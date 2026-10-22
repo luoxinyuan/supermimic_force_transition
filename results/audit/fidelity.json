@@ -1,0 +1,146 @@
+[
+{
+"aspect": "Simulator",
+"paper": "MuJoCo Warp, 4 x 5 ms substeps per 50 Hz step",
+"ours": "mjlab 1.2 + MuJoCo Warp 3.5, 4 x 5 ms substeps",
+"kind": "Same as paper"
+},
+{
+"aspect": "Robot model and actuators",
+"paper": "Unitree G1 29-DoF, BeyondMimic low PD gains",
+"ours": "mjlab G1 (BeyondMimic gains, armature-based)",
+"kind": "Same as paper"
+},
+{
+"aspect": "Action",
+"paper": "q_sp = alpha * a + q0",
+"ours": "q_sp = alpha * a + q0, alpha = 0.25 effort/stiffness",
+"kind": "Same as paper"
+},
+{
+"aspect": "Observation",
+"paper": "q - q0, qd, IMU gyro, projected gravity, last action; 10-frame history; Table A.1 noise",
+"ours": "Same terms, noise and history; encoder bias added to q",
+"kind": "Same as paper"
+},
+{
+"aspect": "Goal",
+"paper": "K = 10 future reference frames",
+"ours": "10 future frames: ref root pose relative to robot root, ref q, qd, ref root velocities (73 per frame)",
+"kind": "Our choice (paper silent)"
+},
+{
+"aspect": "Reward",
+"paper": "BeyondMimic tracking terms, no self-collision, joint limit -2, x dt",
+"ours": "Same terms, weights and stds; pelvis as anchor",
+"kind": "Same as paper"
+},
+{
+"aspect": "Termination",
+"paper": "|root z err| > 0.25 m or tilt err > 0.8",
+"ours": "Same; soft sigmoid version inside imagination",
+"kind": "Same as paper"
+},
+{
+"aspect": "Sim context (DR)",
+"paper": "friction U[0.3,1.2], joint offsets U[-0.01,0.01], torso COM; no pushes",
+"ours": "Same, resampled per episode; set_const batched every 50 steps",
+"kind": "Same as paper"
+},
+{
+"aspect": "State representation",
+"paper": "not specified",
+"ours": "floating-base qpos/qvel (71 numbers)",
+"kind": "Our choice (paper silent)"
+},
+{
+"aspect": "Reward / obs / termination heads",
+"paper": "learned or analytic",
+"ours": "analytic, on our differentiable FK (matches MuJoCo to 1e-6)",
+"kind": "Our choice (paper silent)"
+},
+{
+"aspect": "World-model network",
+"paper": "MLP (2048, 2048, 2048)",
+"ours": "MLP (2048, 2048, 2048), SiLU, predicts normalized state change in heading frame",
+"kind": "Same as paper"
+},
+{
+"aspect": "World-model loss",
+"paper": "k = 8 autoregressive windows, Eq. 1",
+"ours": "k = 8, state term only (heads analytic), per-dim normalized",
+"kind": "Same as paper"
+},
+{
+"aspect": "Policy",
+"paper": "encoder (2048,1024,512,256) -> 32-d tanh latent -> decoder (2048,1024,512,256)",
+"ours": "Same sizes, ELU",
+"kind": "Same as paper"
+},
+{
+"aspect": "Critic",
+"paper": "MLP (256, 128), GAE lambda 0.95, no target network",
+"ours": "Same; input adds remaining clip time",
+"kind": "Same as paper"
+},
+{
+"aspect": "Imagination",
+"paper": "H = 32, 4096 rollouts, BPTT, gamma 0.99",
+"ours": "Same",
+"kind": "Same as paper"
+},
+{
+"aspect": "Optimizers",
+"paper": "Adam 2e-4 (policy betas 0.9/0.95), clip 1.0 then 0.1 element-wise",
+"ours": "Same",
+"kind": "Same as paper"
+},
+{
+"aspect": "Schedule",
+"paper": "UTD 0.4, cosine LR to 0.03x over 250k iterations",
+"ours": "1 sim step per iteration, 0.4 updates per iteration (10 WM grad steps + 1 policy step each)",
+"kind": "Our choice (paper silent)"
+},
+{
+"aspect": "Reset sampling",
+"paper": "1 s bins: 50% uniform, 40% softmax(-25 G/Gmax), 10% past weight",
+"ours": "Same",
+"kind": "Same as paper"
+},
+{
+"aspect": "Reset noise",
+"paper": "not specified",
+"ours": "BeyondMimic pose/velocity/joint reset noise",
+"kind": "Our choice (paper silent)"
+},
+{
+"aspect": "Clip end in imagination",
+"paper": "not specified",
+"ours": "treated as end of task (no bootstrap)",
+"kind": "Our choice (paper silent)"
+},
+{
+"aspect": "Hardware",
+"paper": "1 or 2 NVIDIA H100 80 GB",
+"ours": "1 NVIDIA RTX A6000 48 GB",
+"kind": "Deviation"
+},
+{
+"aspect": "Precision",
+"paper": "TF32",
+"ours": "bf16 autocast for MLP matmuls; FK, integration, losses fp32",
+"kind": "Deviation"
+},
+{
+"aspect": "Benchmark protocol",
+"paper": "each clip once from frame 0, friction 1.0, no DR/noise, deterministic",
+"ours": "Same",
+"kind": "Same as paper"
+},
+{
+"aspect": "PPO-Sim baseline",
+"paper": "BeyondMimic PPO hyperparameters, 8192 envs/GPU, same nets/obs/reward",
+"ours": "Same; Gaussian policy with learned per-joint std",
+"kind": "Same as paper"
+}
+]

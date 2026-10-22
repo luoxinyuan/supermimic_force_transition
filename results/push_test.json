@@ -1,0 +1,102 @@
+{
+ "runs/smimic_lafan1_1gpu/ckpt_0048000.pt": {
+  "0.5": {
+   "falls": 0,
+   "never_settled": 0,
+   "settle_s_median": 1.2000000000000002,
+   "settle_s_max": 2.82
+  },
+  "1.0": {
+   "falls": 0,
+   "never_settled": 0,
+   "settle_s_median": 2.8,
+   "settle_s_max": 4.16
+  },
+  "1.5": {
+   "falls": 0,
+   "never_settled": 0,
+   "settle_s_median": 3.26,
+   "settle_s_max": 5.66
+  },
+  "2.0": {
+   "falls": 0,
+   "never_settled": 2,
+   "settle_s_median": 2.59,
+   "settle_s_max": 6.42
+  },
+  "2.5": {
+   "falls": 0,
+   "never_settled": 2,
+   "settle_s_median": 2.67,
+   "settle_s_max": 6.48
+  },
+  "3.0": {
+   "falls": 0,
+   "never_settled": 1,
+   "settle_s_median": 5.92,
+   "settle_s_max": 6.8
+  },
+  "3.5": {
+   "falls": 2,
+   "never_settled": 5,
+   "settle_s_median": 4.5,
+   "settle_s_max": 4.5
+  },
+  "4.0": {
+   "falls": 4,
+   "never_settled": 4,
+   "settle_s_median": null,
+   "settle_s_max": null
+  }
+ },
+ "runs/abl_H32_critic_false/ckpt_0072000.pt": {
+  "0.5": {
+   "falls": 0,
+   "never_settled": 0,
+   "settle_s_median": 1.33,
+   "settle_s_max": 1.74
+  },
+  "1.0": {
+   "falls": 0,
+   "never_settled": 0,
+   "settle_s_median": 1.5100000000000002,
+   "settle_s_max": 2.06
+  },
+  "1.5": {
+   "falls": 0,
+   "never_settled": 0,
+   "settle_s_median": 1.83,
+   "settle_s_max": 3.02
+  },
+  "2.0": {
+   "falls": 0,
+   "never_settled": 0,
+   "settle_s_median": 2.56,
+   "settle_s_max": 3.66
+  },
+  "2.5": {
+   "falls": 1,
+   "never_settled": 0,
+   "settle_s_median": 3.18,
+   "settle_s_max": 4.0200000000000005
+  },
+  "3.0": {
+   "falls": 3,
+   "never_settled": 0,
+   "settle_s_median": 3.7800000000000002,
+   "settle_s_max": 5.5
+  },
+  "3.5": {
+   "falls": 7,
+   "never_settled": 0,
+   "settle_s_median": 3.16,
+   "settle_s_max": 3.16
+  },
+  "4.0": {
+   "falls": 8,
+   "never_settled": 0,
+   "settle_s_median": null,
+   "settle_s_max": null
+  }
+ }
+}

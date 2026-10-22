@@ -1,0 +1,122 @@
+[
+{
+"id": "C1",
+"where": "Fig. 3a",
+"claim": "SuperMimic reaches return 0.82 on LAFAN1 within 1.2 h on one GPU",
+"paper": "0.82 within 1.2 h (H100)",
+"ours": "0.833 at 1.34 h (A6000), 1/40 failed; best so far 0.947 at 11.42 h, 0/40 failed",
+"status": "Reproduced"
+},
+{
+"id": "C2",
+"where": "Fig. 3a",
+"claim": "PPO-Sim (1 GPU) does not reach 0.82 within 18 h; final return 0.60",
+"paper": "0.60 after 18 h",
+"ours": "0.523 at 17.5 h of 18 h",
+"status": "In progress"
+},
+{
+"id": "C3",
+"where": "Fig. 3a",
+"claim": "PPO-Sim on 4 / 8 GPUs ends at 0.70 / 0.72",
+"paper": "0.70 / 0.72",
+"ours": "not run (needs 4-8 GPUs on the shared partition)",
+"status": "Not started"
+},
+{
+"id": "C4",
+"where": "Fig. 3b,c",
+"claim": "Without the critic, training fails at H <= 16",
+"paper": "H=16 no critic: 0.25 final training return",
+"ours": "H=16 no critic: best eval 0.035, 40/40 failed",
+"status": "Reproduced"
+},
+{
+"id": "C5",
+"where": "Fig. 3b,c",
+"claim": "With the critic, H=16 matches the critic-free H=32",
+"paper": "0.843 vs 0.84 final training return",
+"ours": "best eval H=16 critic 0.905 vs H=32 no critic 0.899",
+"status": "Reproduced"
+},
+{
+"id": "C6",
+"where": "Fig. 3c",
+"claim": "H=32 reaches 0.82 fastest; H 64 -> 128 nearly triples the time",
+"paper": "0.88 h (H=32) vs 1.70 h (H=64), 4.62 h (H=128)",
+"ours": "benchmark 0.82 at 1.34 h (H=32) vs 3.31 h (H=64) vs 2.00 h (H=16) vs not reached (H=128, best 0.460 at 2.7 h of 5.1 h trained, ~4x the per-iteration cost of H=32)",
+"status": "Partly reproduced"
+},
+{
+"id": "C7",
+"where": "Fig. 4a",
+"claim": "World model rollouts are >10x faster than MuJoCo Warp at 2k-16k envs (62x at 64k)",
+"paper": "11x-26x at 2k-16k",
+"ours": "14.6x-21.5x at 2k-16k (TF32, A6000); 32k/64k not measurable here (building that many simulated worlds needs >120 GB host RAM)",
+"status": "Reproduced"
+},
+{
+"id": "C8",
+"where": "Fig. 4b",
+"claim": "BPTT reaches PPO-WM's best return with ~64x fewer imagined steps",
+"paper": "64x",
+"ours": "SuperMimic reaches PPO-WM 16k x 32's best training return (0.333, at 2.7e+09 imagined steps) after 1e+08: 27x fewer; the paper's curves give 13x at that return, its 64x is at return 0.84",
+"status": "Partly reproduced"
+},
+{
+"id": "C9",
+"where": "Sec. 5.3",
+"claim": "Under 0.5-4 m/s pushes the critic policy settles in 0.5-2.4 s; the critic-free one never settles",
+"paper": "critic settles 0.5-2.4 s; no critic stumbles at 0.5 m/s, falls at 4 m/s",
+"ours": "critic: 6/64 pushes fell (4/8 at 4 m/s), settles in 1.2 s median at 0.5 m/s; no critic: 19/64 pushes fell (8/8 at 4 m/s), settles in 1.3 s median at 0.5 m/s (matched benchmark return ~0.90)",
+"status": "Partly reproduced"
+},
+{
+"id": "C10",
+"where": "Fig. 2a, Table A.4",
+"claim": "On 129,514 BONES-SEED motions, 1 GPU x 3 h beats SONIC (return 0.90; 25 vs 179 failed); 2 GPUs x 9.8 h: 0 failed",
+"paper": "25 / 0 failed vs SONIC 179",
+"ours": "BONES-SEED is license-gated; waiting for the user's HuggingFace access",
+"status": "Blocked"
+},
+{
+"id": "C11",
+"where": "Fig. 2b,c",
+"claim": "From 1 to 264 h of motion, 8-step WM error stays 0.007-0.011 and GPU-hours to target grow slowly",
+"paper": "0.54 -> 1.89 GPU-h",
+"ours": "needs BONES-SEED",
+"status": "Blocked"
+},
+{
+"id": "C12",
+"where": "Sec. 5.1",
+"claim": ">1000x fewer GPU-hours than SONIC (21k GPU-h)",
+"paper": "3 GPU-h vs ~21,000",
+"ours": "needs BONES-SEED and SONIC evaluated in our simulator",
+"status": "Blocked"
+},
+{
+"id": "C13",
+"where": "App. E",
+"claim": "Filtering keeps 129,514 of 142,220 BONES-SEED clips",
+"paper": "142,220 -> 129,667 -> 129,514",
+"ours": "filter script written; needs the data",
+"status": "Blocked"
+},
+{
+"id": "C14",
+"where": "Sec. 5.5",
+"claim": "RL-trained velocity encoder beats distillation on 650 of 672 step responses",
+"paper": "650 / 672",
+"ours": "RL lower error on 659 of 672, distillation on 13; median relative error 0.043 vs 0.223 (paper 0.16 vs 0.49); distillation fell on all trials of 0 commands (paper 7); trained on LAFAN1 walk/run/sprint only [smoke run: RL checkpoint at 88000 of 100k iterations; final run queued]",
+"status": "In progress"
+},
+{
+"id": "C15",
+"where": "Sec. 5.4",
+"claim": "The policy transfers to a physical Unitree G1",
+"paper": "4 real-robot motions",
+"ours": "out of scope (simulation only)",
+"status": "Out of scope"
+}
+]

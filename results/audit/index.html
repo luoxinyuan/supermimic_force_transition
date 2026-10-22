@@ -1,0 +1,804 @@
+<style>
+/* Audit board: summary strip on top, one tab per question the auditor asks. */
+#dash-root .sm { display: grid; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+#dash-root .sm-head { display: grid; gap: var(--cds-gap-sm); }
+#dash-root .sm-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+#dash-root .sm-take { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 70ch; line-height: 1.5; }
+#dash-root .sm-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: var(--cds-gap-md); }
+#dash-root .sm-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: grid; gap: var(--cds-gap-xs); align-content: start; }
+#dash-root .sm-tile-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+#dash-root .sm-tile-value { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; min-height: 1.2em; }
+#dash-root .sm-tile-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+#dash-root .sm-ok { color: var(--color-ok); }
+#dash-root .sm-warn { color: var(--color-warn); }
+#dash-root .sm-bad { color: var(--color-bad); }
+#dash-root .sm-tabs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); }
+#dash-root .sm-tab { appearance: none; background: none; border: 0; border-bottom: 2px solid transparent; padding: var(--cds-pad-sm) var(--cds-pad-md); font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg-muted); cursor: pointer; margin-bottom: -1px; }
+#dash-root .sm-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); }
+#dash-root .sm-tab:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+#dash-root .sm-page { display: grid; gap: var(--cds-gap-lg); }
+#dash-root .sm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: var(--cds-gap-md); }
+#dash-root .sm-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); min-width: 0; align-content: start; }
+#dash-root .sm-card h3 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+#dash-root .sm-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.5; max-width: 75ch; }
+#dash-root .sm-chart { position: relative; min-height: 18rem; }
+#dash-root .sm-chart.sm-tall { min-height: 22rem; }
+#dash-root .sm-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); list-style: none; margin: 0; padding: 0; }
+#dash-root .sm-legend li { display: inline-flex; align-items: center; gap: 0.4rem; }
+#dash-root .sm-swatch { width: 1.1rem; height: 0; border-top: 2px solid; display: inline-block; }
+#dash-root .sm-swatch.sm-dashed { border-top-style: dashed; }
+#dash-root .sm-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; font-variant-numeric: tabular-nums; }
+#dash-root .sm-tip-head { color: var(--cds-text-secondary); }
+#dash-root .sm-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; width: fit-content; }
+#dash-root .sm-seg button { appearance: none; border: 0; background: none; font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); color: var(--color-fg-muted); cursor: pointer; }
+#dash-root .sm-seg button[aria-pressed="true"] { background: var(--color-bg); color: var(--color-fg); }
+#dash-root .sm-seg button:focus-visible, #dash-root .sm-table th button:focus-visible, #dash-root .sm-search:focus-visible, #dash-root .sm-select:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 1px; }
+#dash-root .sm-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+#dash-root .sm-search, #dash-root .sm-select { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); }
+#dash-root .sm-scroll { overflow: auto; max-height: 30rem; }
+#dash-root .sm-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+#dash-root .sm-table th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); position: sticky; top: 0; background: var(--color-panel); border-bottom: 1px solid var(--color-border-line); padding: var(--cds-pad-xs) var(--cds-pad-sm); vertical-align: bottom; }
+#dash-root .sm-table th button { appearance: none; border: 0; background: none; font: inherit; color: inherit; padding: 0; cursor: pointer; text-align: left; }
+#dash-root .sm-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; line-height: 1.45; }
+#dash-root .sm-table td.sm-num, #dash-root .sm-table th.sm-num { text-align: right; }
+#dash-root .sm-table td.sm-wrap { min-width: 14rem; }
+#dash-root .sm-table td.sm-mono { font-family: var(--font-anthropic-mono, ui-monospace, monospace); }
+#dash-root .sm-chip { display: inline-block; padding: 0.05rem 0.45rem; border: 1px solid currentColor; border-radius: 999px; font-size: var(--cds-font-size-caption); white-space: nowrap; }
+#dash-root .sm-muted { color: var(--color-fg-muted); }
+#dash-root .sm-cmds { margin: 0; padding: var(--cds-pad-sm) var(--cds-pad-md); background: var(--color-bg); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); font-family: var(--font-anthropic-mono, ui-monospace, monospace); font-size: var(--cds-font-size-caption); overflow-x: auto; line-height: 1.6; white-space: pre; }
+#dash-root .sm-list { margin: 0; padding-left: 1.2rem; font-size: var(--cds-font-size-body); line-height: 1.55; max-width: 75ch; display: grid; gap: var(--cds-gap-xs); }
+#dash-root .sm-fail { display: flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: inherit; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+#dash-root .sm-fail::before { content: ""; width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--color-bad); }
+#dash-root [data-dash-source-state=empty] { color: transparent; }
+#dash-root [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+#dash-root svg text { fill: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-family: var(--font-anthropic-sans); }
+</style>
+
+<div class="sm" id="audit">
+  <header class="sm-head" id="summary">
+    <h2 class="sm-title">SuperMimic reproduction audit</h2>
+    <p class="sm-take dash-skeleton" id="takeaway">—</p>
+    <div class="sm-tiles">
+      <div class="sm-tile" id="tile-reproduced">
+        <span class="sm-tile-label">Claims reproduced</span>
+        <span class="sm-tile-value sm-ok dash-skeleton" data-source="claim_counts" data-field="n" data-where="status=Reproduced">—</span>
+        <span class="sm-tile-note">of the paper's checkable claims</span>
+      </div>
+      <div class="sm-tile" id="tile-partial">
+        <span class="sm-tile-label">Partly reproduced</span>
+        <span class="sm-tile-value sm-warn dash-skeleton" data-source="claim_counts" data-field="n" data-where="status=Partly reproduced">—</span>
+        <span class="sm-tile-note">direction holds, details differ</span>
+      </div>
+      <div class="sm-tile" id="tile-progress">
+        <span class="sm-tile-label">In progress</span>
+        <span class="sm-tile-value dash-skeleton" data-source="claim_counts" data-field="n" data-where="status=In progress">—</span>
+        <span class="sm-tile-note">runs training or queued</span>
+      </div>
+      <div class="sm-tile" id="tile-blocked">
+        <span class="sm-tile-label">Blocked</span>
+        <span class="sm-tile-value sm-bad dash-skeleton" data-source="claim_counts" data-field="n" data-where="status=Blocked">—</span>
+        <span class="sm-tile-note">need BONES-SEED access</span>
+      </div>
+      <div class="sm-tile" id="tile-best">
+        <span class="sm-tile-label">SuperMimic best return, LAFAN1</span>
+        <span class="sm-tile-value dash-skeleton" data-source="headline" data-field="value" data-where="metric=supermimic_best">—</span>
+        <span class="sm-tile-note">at <span data-source="headline" data-field="hours" data-where="metric=supermimic_best">—</span> h, one A6000</span>
+      </div>
+      <div class="sm-tile" id="tile-ppo">
+        <span class="sm-tile-label">PPO-Sim latest return</span>
+        <span class="sm-tile-value dash-skeleton" data-source="headline" data-field="value" data-where="metric=ppo_latest">—</span>
+        <span class="sm-tile-note">at <span data-source="headline" data-field="hours" data-where="metric=ppo_latest">—</span> h, one A6000</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sm-tabs" role="tablist" aria-label="Audit sections">
+    <button class="sm-tab" role="tab" id="tab-claims" data-page="claims" aria-selected="true">Claims</button>
+    <button class="sm-tab" role="tab" id="tab-lafan" data-page="lafan" aria-selected="false">LAFAN1 comparison</button>
+    <button class="sm-tab" role="tab" id="tab-ablations" data-page="ablations" aria-selected="false">Horizon and critic</button>
+    <button class="sm-tab" role="tab" id="tab-worldmodel" data-page="worldmodel" aria-selected="false">World model</button>
+    <button class="sm-tab" role="tab" id="tab-implementation" data-page="implementation" aria-selected="false">Implementation</button>
+    <button class="sm-tab" role="tab" id="tab-runs" data-page="runs" aria-selected="false">Runs and files</button>
+  </nav>
+
+  <section class="sm-page" id="claims" role="tabpanel" aria-labelledby="tab-claims">
+    <div class="sm-card" id="card-claims">
+      <h3>Paper claims, one by one</h3>
+      <p class="sm-note">Each row is a claim from arXiv 2610.28480 with the paper's figure, ours, and a status. Status is Claude's judgment from the linked runs; the evidence for each is in the other tabs and under Sources.</p>
+      <div class="sm-scroll">
+        <table class="sm-table" id="table-claims" data-source="claims" data-row-key="id">
+          <thead><tr>
+            <th data-field="id">#</th>
+            <th data-field="where">Where</th>
+            <th data-field="claim">Claim</th>
+            <th data-field="paper">Paper</th>
+            <th data-field="ours">Ours</th>
+            <th data-field="status">Status</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sm-page" id="lafan" role="tabpanel" aria-labelledby="tab-lafan" hidden>
+    <div class="sm-card" id="card-lafan-curve">
+      <h3>Benchmark return over training time (Fig. 3a)</h3>
+      <p class="sm-note">Normalized return on every LAFAN1 clip, each played once from its first frame with no randomization or noise. Solid lines are our runs on one RTX A6000; dashed lines are the paper's curves, read from its TeX source. The dotted line is the paper's target return.</p>
+      <div class="sm-controls">
+        <div class="sm-seg" role="group" aria-label="Time range">
+          <button id="range-early" aria-pressed="true">First 4 hours</button>
+          <button id="range-all" aria-pressed="false">Whole run</button>
+        </div>
+      </div>
+      <ul class="sm-legend" id="legend-lafan" data-source="eval_curves paper_curves"></ul>
+      <div class="sm-chart sm-tall dash-skeleton" id="chart-lafan" data-source="eval_curves paper_curves"></div>
+    </div>
+    <div class="sm-card" id="card-clips">
+      <h3>Per-clip return at the latest checkpoints</h3>
+      <p class="sm-note">Each LAFAN1 clip's normalized return and whether it triggered termination, for the newest SuperMimic and PPO-Sim checkpoints (training hours in the last two columns).</p>
+      <div class="sm-controls"><input class="sm-search" id="clip-search" type="search" placeholder="Filter clips" aria-label="Filter clips"></div>
+      <div class="sm-scroll">
+        <table class="sm-table" id="table-clips" data-source="per_clip" data-row-key="clip">
+          <thead><tr>
+            <th data-field="clip"><button data-sort="clip">Clip</button></th>
+            <th class="sm-num" data-field="seconds"><button data-sort="seconds">Length (s)</button></th>
+            <th class="sm-num" data-field="supermimic_return"><button data-sort="supermimic_return">SuperMimic</button></th>
+            <th data-field="supermimic_failed"><button data-sort="supermimic_failed">Failed</button></th>
+            <th class="sm-num" data-field="ppo_return"><button data-sort="ppo_return">PPO-Sim</button></th>
+            <th data-field="ppo_failed"><button data-sort="ppo_failed">Failed</button></th>
+            <th class="sm-num" data-field="supermimic_checkpoint_hours"><button data-sort="supermimic_checkpoint_hours">SuperMimic ckpt (h)</button></th>
+            <th class="sm-num" data-field="ppo_checkpoint_hours"><button data-sort="ppo_checkpoint_hours">PPO ckpt (h)</button></th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sm-page" id="ablations" role="tabpanel" aria-labelledby="tab-ablations" hidden>
+    <div class="sm-card" id="card-abl-table">
+      <h3>Imagination horizon with and without the critic (Fig. 3b, 3c)</h3>
+      <p class="sm-note">Our benchmark returns per configuration beside the paper's final training return and its hours to a training return of 0.82. The paper measures training return; ours stays below eval return (our training episodes start from randomized resets weighted toward hard segments), so the benchmark return is the comparable column.</p>
+      <div class="sm-scroll">
+        <table class="sm-table" id="table-ablation" data-source="ablation" data-row-key="config">
+          <thead><tr>
+            <th data-field="config">Configuration</th>
+            <th data-field="run">Run</th>
+            <th class="sm-num" data-field="best_eval">Best return</th>
+            <th class="sm-num" data-field="best_eval_hours">at (h)</th>
+            <th class="sm-num" data-field="latest_failed">Failed now</th>
+            <th class="sm-num" data-field="train_hours">Trained (h)</th>
+            <th class="sm-num" data-field="hours_to_eval_082">Hours to 0.82</th>
+            <th class="sm-num" data-field="paper_final_train_return">Paper final</th>
+            <th class="sm-num" data-field="paper_hours_to_train_082">Paper hours to 0.82</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="sm-card" id="card-abl-curve">
+      <h3>Benchmark return over training time, per configuration</h3>
+      <p class="sm-note">Same benchmark as the LAFAN1 tab. A longer horizon costs more time per iteration, so curves are against wall-clock hours.</p>
+      <ul class="sm-legend" id="legend-abl" data-source="eval_curves"></ul>
+      <div class="sm-chart dash-skeleton" id="chart-abl" data-source="eval_curves"></div>
+    </div>
+  </section>
+
+  <section class="sm-page" id="worldmodel" role="tabpanel" aria-labelledby="tab-worldmodel" hidden>
+    <div class="sm-grid">
+      <div class="sm-card" id="card-speed">
+        <h3>Rollout speed: world model vs MuJoCo Warp (Fig. 4a)</h3>
+        <p class="sm-note">Control steps per second at each number of parallel environments, one 50 Hz step being four 5 ms MuJoCo Warp substeps. Ours: RTX A6000, TF32; paper: H100. Both axes are logarithmic.</p>
+        <ul class="sm-legend" id="legend-speed" data-source="rollout_speed"></ul>
+        <div class="sm-chart dash-skeleton" id="chart-speed" data-source="rollout_speed"></div>
+      </div>
+      <div class="sm-card" id="card-wm">
+        <h3>Training curves of the SuperMimic runs</h3>
+        <p class="sm-note">Pick a quantity. World-model errors are mean squared prediction errors normalized per state dimension by the spread of one-step changes, measured on fresh replay windows; they are not the paper's "nominal error" scale.</p>
+        <div class="sm-controls">
+          <select class="sm-select" id="wm-metric" aria-label="Quantity">
+            <option value="train_return">Training return</option>
+            <option value="wm_error_8step">World-model error, 8 steps</option>
+            <option value="wm_error_1step">World-model error, 1 step</option>
+            <option value="fell_share">Share of episodes ending in a fall</option>
+            <option value="episode_steps">Training episode length (steps)</option>
+          </select>
+        </div>
+        <ul class="sm-legend" id="legend-wm" data-source="train_curves"></ul>
+        <div class="sm-chart dash-skeleton" id="chart-wm" data-source="train_curves"></div>
+      </div>
+    </div>
+    <div class="sm-card" id="card-fig4b">
+      <h3>Imagined steps to the same return (Fig. 4b)</h3>
+      <p class="sm-note">Training return of runs on the LAFAN1 walk, run and sprint clips against cumulative imagined steps: SuperMimic's gradient-based update against PPO on world-model rollouts (PPO-WM). Dashed lines are the paper's curves from its figure data; ours run at the paper's best PPO-WM batch size. Our training return reads lower than the paper's for the same policy (see the Horizon and critic tab), so compare the gap between methods rather than the levels.</p>
+      <ul class="sm-legend" id="legend-fig4b" data-source="fig4b"></ul>
+      <div class="sm-chart dash-skeleton" id="chart-fig4b" data-source="fig4b"></div>
+    </div>
+    <div class="sm-card" id="card-speed-table">
+      <h3>Rollout speed, as numbers</h3>
+      <div class="sm-scroll">
+        <table class="sm-table" id="table-speed" data-source="rollout_speed" data-row-key="envs">
+          <thead><tr>
+            <th class="sm-num" data-field="envs">Environments</th>
+            <th class="sm-num" data-field="ours_mjwarp">Ours: MuJoCo Warp</th>
+            <th class="sm-num" data-field="ours_world_model">Ours: world model</th>
+            <th class="sm-num" data-source="speedup" data-field="ours_ratio">Ours: speed-up</th>
+            <th class="sm-num" data-field="paper_mjwarp">Paper: MuJoCo Warp</th>
+            <th class="sm-num" data-field="paper_world_model">Paper: world model</th>
+            <th class="sm-num" data-source="speedup" data-field="paper_ratio">Paper: speed-up</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sm-page" id="implementation" role="tabpanel" aria-labelledby="tab-implementation" hidden>
+    <div class="sm-card" id="card-fidelity">
+      <h3>What we built against what the paper specifies</h3>
+      <p class="sm-note">No code was released, so everything is re-implemented from the TeX source. "Our choice" marks details the paper leaves open; "Deviation" marks where we knowingly differ.</p>
+      <div class="sm-controls">
+        <select class="sm-select" id="fid-kind" aria-label="Show">
+          <option value="">All rows</option>
+          <option value="Same as paper">Same as paper</option>
+          <option value="Our choice (paper silent)">Our choice (paper silent)</option>
+          <option value="Deviation">Deviation</option>
+        </select>
+      </div>
+      <div class="sm-scroll">
+        <table class="sm-table" id="table-fidelity" data-source="fidelity" data-row-key="aspect">
+          <thead><tr>
+            <th data-field="aspect">Aspect</th>
+            <th data-field="paper">Paper</th>
+            <th data-field="ours">Ours</th>
+            <th data-field="kind">Match</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="sm-card" id="card-caveats">
+      <h3>Read these before trusting a comparison</h3>
+      <ul class="sm-list">
+        <li>Hardware differs. MuJoCo Warp runs about as fast on the A6000 as the paper reports for the H100, while SuperMimic's MLP-heavy updates run several times slower, so wall-clock comparisons here favor PPO-Sim.</li>
+        <li>Training time excludes benchmark evaluation, as in the paper, and includes the one-time torch.compile warm-up at the start of each run.</li>
+        <li>The PPO-Sim run started before the training-return definition was fixed, so only its benchmark evaluations are shown.</li>
+        <li>The headline result on the full BONES-SEED benchmark against SONIC cannot be run until the dataset's license is accepted on HuggingFace.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sm-page" id="runs" role="tabpanel" aria-labelledby="tab-runs" hidden>
+    <div class="sm-card" id="card-runs">
+      <h3>Every run behind this page</h3>
+      <p class="sm-note">Paths are relative to /n/fs/pci-sharedt/junqiyou/supermimic_repro on the Ionic cluster.</p>
+      <div class="sm-scroll">
+        <table class="sm-table" id="table-runs" data-source="runs" data-row-key="run">
+          <thead><tr>
+            <th data-field="run">Run</th>
+            <th data-field="label">What it is</th>
+            <th data-field="figure">Paper figure</th>
+            <th data-field="slurm_job">Slurm job</th>
+            <th data-field="status">Status</th>
+            <th class="sm-num" data-field="iterations">Iterations</th>
+            <th class="sm-num" data-field="train_hours">Trained (h)</th>
+            <th data-field="evals">Evaluations file</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="sm-card" id="card-verify">
+      <h3>Check it yourself</h3>
+      <p class="sm-note">From the project directory on the cluster. The status script prints every run's latest training and benchmark numbers; the export script rebuilds this page's data from the same logs.</p>
+<pre class="sm-cmds">cd /n/fs/pci-sharedt/junqiyou/supermimic_repro
+python3 code/scripts/status.py               # latest numbers per run
+python3 code/scripts/export_audit.py         # rebuild this page's data
+less notes/IMPLEMENTATION.md notes/RESULTS.md
+ls paper/src/sections                        # the paper's TeX, source of every "paper" figure
+# re-score a checkpoint on the benchmark (inside a GPU job):
+source env.sh; source setup_local_env.sh
+$SMIMIC_PY -m supermimic.evaluate --run runs/smimic_lafan1_1gpu --out eval_recheck.jsonl</pre>
+    </div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const fmt3 = d3.format('.3f');
+  const fmt2 = d3.format('.2f');
+  const fmtInt = d3.format(',');
+  const fmtSi = (v) => Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 2 }).format(v);
+  const STATUS = ['Reproduced', 'In progress', 'Blocked', 'Not started', 'Out of scope'];
+  const STATUS_CLASS = { Reproduced: 'sm-ok', 'Partly reproduced': 'sm-warn', Blocked: 'sm-bad' };
+
+  dash.calc('claim_counts', {
+    title: 'Claims per status',
+    description: 'Number of paper claims in each audit status.',
+    inputs: ['claims'],
+    fn: (claims) => {
+      const out = ['Reproduced', 'Partly reproduced', 'In progress', 'Blocked', 'Not started', 'Out of scope'].map((status) => ({ status, n: claims.filter((c) => c.status === status).length }));
+      out.push({ status: 'Checkable', n: claims.filter((c) => c.status !== 'Out of scope').length });
+      return out;
+    },
+  });
+
+  dash.calc('headline', {
+    title: 'Headline returns',
+    description: 'Best SuperMimic and latest PPO-Sim benchmark return on LAFAN1, with the training hours at which each was measured.',
+    inputs: ['eval_curves'],
+    fn: (eval_curves) => {
+      const sm = eval_curves.filter((r) => r.run === 'smimic_lafan1_1gpu');
+      const pp = eval_curves.filter((r) => r.run === 'ppo_lafan1_1gpu');
+      const best = sm.reduce((a, r) => (!a || r.norm_return > a.norm_return ? r : a), null);
+      const last = pp.reduce((a, r) => (!a || r.hours > a.hours ? r : a), null);
+      const first82 = sm.filter((r) => r.norm_return >= 0.82).sort((a, b) => a.hours - b.hours)[0];
+      return [
+        { metric: 'supermimic_best', value: best ? best.norm_return : null, hours: best ? best.hours : null },
+        { metric: 'ppo_latest', value: last ? last.norm_return : null, hours: last ? last.hours : null },
+        { metric: 'supermimic_first_082', value: first82 ? first82.norm_return : null, hours: first82 ? first82.hours : null },
+      ];
+    },
+  });
+
+  dash.calc('speedup', {
+    title: 'World-model speed-up',
+    description: 'World-model control steps per second divided by MuJoCo Warp control steps per second, ours and the paper’s.',
+    inputs: ['rollout_speed'],
+    fn: (rollout_speed) => rollout_speed.map((r) => ({
+      envs: r.envs,
+      ours_ratio: r.ours_mjwarp ? r.ours_world_model / r.ours_mjwarp : null,
+      paper_ratio: r.paper_world_model / r.paper_mjwarp,
+    })),
+  });
+
+  // Tabs.
+  const tabs = [...document.querySelectorAll('#dash-root .sm-tab')];
+  const pages = tabs.map((t) => document.getElementById(t.dataset.page));
+  let current = 'claims';
+  const show = (id) => {
+    current = id;
+    tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.page === id)));
+    pages.forEach((p) => { p.hidden = p.id !== id; });
+    dash.setLink(id);
+    draw();
+  };
+  tabs.forEach((t) => t.addEventListener('click', () => show(t.dataset.page)));
+
+  // Controls kept in the page.
+  let lafanRange = 'early';
+  const rangeBtns = { early: document.getElementById('range-early'), all: document.getElementById('range-all') };
+  Object.entries(rangeBtns).forEach(([k, b]) => b.addEventListener('click', () => {
+    lafanRange = k;
+    Object.entries(rangeBtns).forEach(([k2, b2]) => b2.setAttribute('aria-pressed', String(k2 === k)));
+    draw();
+  }));
+  const wmMetric = document.getElementById('wm-metric');
+  wmMetric.addEventListener('change', draw);
+  const fidKind = document.getElementById('fid-kind');
+  fidKind.addEventListener('change', draw);
+  const clipSearch = document.getElementById('clip-search');
+  clipSearch.addEventListener('input', draw);
+  let clipSort = { key: 'clip', dir: 1 };
+  document.querySelectorAll('#table-clips th button').forEach((b) => b.addEventListener('click', () => {
+    const k = b.dataset.sort;
+    clipSort = { key: k, dir: clipSort.key === k ? -clipSort.dir : (k === 'clip' ? 1 : -1) };
+    draw();
+  }));
+
+  // Helpers.
+  const ok = (id) => dash.data(id).status === 'ok';
+  const rows = (id) => (ok(id) ? dash.data(id).data : []);
+  const failLine = (el, id) => {
+    const st = dash.data(id).status;
+    if (st === 'error' || st === 'missing') {
+      el.classList.remove('dash-skeleton');
+      el.replaceChildren();
+      const d = document.createElement('div');
+      d.className = 'sm-fail';
+      d.textContent = 'Failed to load';
+      el.append(d);
+      return true;
+    }
+    return false;
+  };
+  const setText = (sel, text) => {
+    document.querySelectorAll(sel).forEach((el) => { el.textContent = text; el.classList.remove('dash-skeleton'); });
+  };
+  const nz = (v, f) => (v === null || v === undefined || Number.isNaN(v) ? '—' : f(v));
+
+  // Width of a tick label as the chart draws it (same font rule as svg text).
+  const textWidth = (el, s) => {
+    const svg = d3.select(el).append('svg').attr('width', 0).attr('height', 0).style('position', 'absolute');
+    const t = svg.append('text').text(s);
+    const w = t.node().getComputedTextLength();
+    svg.remove();
+    return w;
+  };
+
+  function fillTable(tableId, data, cols) {
+    const tbody = document.querySelector(`#${tableId} tbody`);
+    tbody.replaceChildren(...data.map((r) => {
+      const tr = document.createElement('tr');
+      cols.forEach((c) => {
+        const td = document.createElement('td');
+        const v = typeof c.value === 'function' ? c.value(r) : r[c.key];
+        if (c.cls) td.className = c.cls;
+        if (c.chip) {
+          const s = document.createElement('span');
+          s.className = 'sm-chip ' + (c.chip(v) || 'sm-muted');
+          s.textContent = v;
+          td.append(s);
+        } else {
+          td.textContent = c.fmt ? nz(v, c.fmt) : (v ?? '—');
+        }
+        tr.append(td);
+      });
+      return tr;
+    }));
+  }
+
+  function legend(id, series) {
+    const ul = document.getElementById(id);
+    ul.replaceChildren(...series.map((s) => {
+      const li = document.createElement('li');
+      const sw = document.createElement('span');
+      sw.className = 'sm-swatch' + (s.dash ? ' sm-dashed' : '');
+      sw.style.borderTopColor = s.color;
+      li.append(sw, document.createTextNode(s.name));
+      return li;
+    }));
+  }
+
+  // A line chart drawn from series of {x, y, extra} points.
+  function lineChart(el, opt) {
+    const W = Math.max(280, el.clientWidth);
+    const H = opt.height || 300;
+    el.classList.remove('dash-skeleton');
+    el.replaceChildren();
+    const all = opt.series.flatMap((s) => s.points);
+    if (!all.length) return;
+    const yTicksScale = (opt.yLog ? d3.scaleLog() : d3.scaleLinear()).domain(opt.yDomain);
+    const yTickVals = opt.yLog ? yTicksScale.ticks(5).filter((v) => Math.log10(v) % 1 === 0) : yTicksScale.ticks(5);
+    const left = 10 + d3.max(yTickVals, (v) => textWidth(el, opt.fmtY(v))) + (opt.yLabel ? 18 : 0);
+    const m = { top: 12, right: 18, bottom: 40, left };
+    const x = (opt.xLog ? d3.scaleLog() : d3.scaleLinear()).domain(opt.xDomain).range([m.left, W - m.right]);
+    const y = (opt.yLog ? d3.scaleLog() : d3.scaleLinear()).domain(opt.yDomain).range([H - m.bottom, m.top]);
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', opt.aria);
+    const xTicks = opt.xLog ? opt.xTickVals : x.ticks(Math.max(2, Math.floor(W / 90)));
+    svg.append('g').selectAll('line').data(yTickVals).join('line')
+      .attr('x1', m.left).attr('x2', W - m.right).attr('y1', (d) => y(d)).attr('y2', (d) => y(d))
+      .attr('stroke', 'var(--cds-chart-grid)').attr('stroke-width', 1);
+    const gx = svg.append('g').attr('transform', `translate(0,${H - m.bottom})`)
+      .call(d3.axisBottom(x).tickValues(xTicks).tickFormat(opt.fmtX).tickSizeOuter(0));
+    gx.attr('font-size', null).attr('font-family', null);
+    gx.select('.domain').attr('stroke', 'var(--cds-chart-axis)');
+    gx.selectAll('.tick line').attr('stroke', 'var(--cds-chart-axis)');
+    const gy = svg.append('g').attr('transform', `translate(${m.left},0)`)
+      .call(d3.axisLeft(y).tickValues(yTickVals).tickFormat(opt.fmtY).tickSize(0).tickPadding(6));
+    gy.attr('font-size', null).attr('font-family', null);
+    gy.select('.domain').remove();
+    svg.append('text').attr('x', (m.left + W - m.right) / 2).attr('y', H - 6).attr('text-anchor', 'middle').text(opt.xLabel);
+    if (opt.yLabel) svg.append('text').attr('transform', `translate(10,${(m.top + H - m.bottom) / 2}) rotate(-90)`).attr('text-anchor', 'middle').text(opt.yLabel);
+    (opt.refs || []).forEach((r) => {
+      svg.append('line').attr('x1', m.left).attr('x2', W - m.right).attr('y1', y(r.y)).attr('y2', y(r.y))
+        .attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '2 4').attr('stroke-width', 1.5);
+    });
+    const line = d3.line().x((d) => x(d.x)).y((d) => y(d.y)).defined((d) => d.y !== null && !Number.isNaN(d.y));
+    const g = svg.append('g').attr('clip-path', null);
+    opt.series.forEach((s) => {
+      const pts = s.points.filter((p) => p.x >= opt.xDomain[0] && p.x <= opt.xDomain[1]);
+      g.append('path').datum(pts).attr('fill', 'none').attr('stroke', s.color)
+        .attr('stroke-width', s.width || 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
+        .attr('stroke-dasharray', s.dash ? '5 4' : null).attr('opacity', s.opacity ?? 1).attr('d', line);
+      if (s.marks) g.append('g').selectAll('circle').data(pts).join('circle')
+        .attr('cx', (d) => x(d.x)).attr('cy', (d) => y(d.y)).attr('r', 2.5).attr('fill', s.color);
+    });
+    // Tooltip: nearest point in screen space.
+    const flat = opt.series.flatMap((s) => s.points.filter((p) => p.x >= opt.xDomain[0] && p.x <= opt.xDomain[1] && p.y !== null).map((p) => ({ ...p, s })));
+    if (!flat.length) return;
+    const del = d3.Delaunay.from(flat, (d) => x(d.x), (d) => y(d.y));
+    const dot = svg.append('circle').attr('r', 4.5).attr('fill', 'none').attr('stroke-width', 2).attr('visibility', 'hidden');
+    const tip = document.createElement('div');
+    tip.className = 'sm-tip';
+    tip.hidden = true;
+    el.append(tip);
+    svg.append('rect').attr('x', m.left).attr('y', m.top).attr('width', W - m.left - m.right).attr('height', H - m.top - m.bottom)
+      .attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [px, py] = d3.pointer(ev);
+        const d = flat[del.find(px, py)];
+        dot.attr('cx', x(d.x)).attr('cy', y(d.y)).attr('stroke', d.s.color).attr('visibility', 'visible');
+        tip.replaceChildren();
+        const head = document.createElement('div');
+        head.className = 'sm-tip-head';
+        head.textContent = opt.tipHead(d);
+        const body = document.createElement('div');
+        body.textContent = `${d.s.name}: ${opt.tipValue(d)}`;
+        tip.append(head, body);
+        tip.hidden = false;
+        const scale = el.clientWidth / W;
+        const tw = tip.offsetWidth;
+        let left = x(d.x) * scale + 12;
+        if (left + tw > el.clientWidth) left = x(d.x) * scale - tw - 12;
+        tip.style.left = `${Math.max(0, left)}px`;
+        tip.style.top = `${Math.max(0, y(d.y) * scale - 36)}px`;
+      })
+      .on('mouseleave', () => { tip.hidden = true; dot.attr('visibility', 'hidden'); });
+  }
+
+  const C = dash.colors;
+  const RUN_LABEL = {
+    smimic_lafan1_1gpu: 'SuperMimic H=32, critic',
+    abl_H16_critic_true: 'H=16, critic',
+    abl_H8_critic_true: 'H=8, critic',
+    abl_H64_critic_true: 'H=64, critic',
+    abl_H32_critic_false: 'H=32, no critic',
+    abl_H16_critic_false: 'H=16, no critic',
+  };
+
+  function drawSummary() {
+    const cc = dash.data('claim_counts');
+    const hl = dash.data('headline');
+    if (cc.status === 'ok') {
+      const n = Object.fromEntries(cc.data.map((r) => [r.status, r.n]));
+      setText('[data-source="claim_counts"][data-where="status=Reproduced"]', fmtInt(n.Reproduced ?? 0));
+      setText('[data-source="claim_counts"][data-where="status=In progress"]', fmtInt(n['In progress'] ?? 0));
+      setText('[data-source="claim_counts"][data-where="status=Partly reproduced"]', fmtInt(n['Partly reproduced'] ?? 0));
+      setText('[data-source="claim_counts"][data-where="status=Blocked"]', fmtInt(n.Blocked ?? 0));
+    }
+    if (hl.status === 'ok') {
+      const h = Object.fromEntries(hl.data.map((r) => [r.metric, r]));
+      setText('[data-source="headline"][data-field="value"][data-where="metric=supermimic_best"]', nz(h.supermimic_best?.value, fmt3));
+      setText('[data-source="headline"][data-field="hours"][data-where="metric=supermimic_best"]', nz(h.supermimic_best?.hours, fmt2));
+      setText('[data-source="headline"][data-field="value"][data-where="metric=ppo_latest"]', nz(h.ppo_latest?.value, fmt3));
+      setText('[data-source="headline"][data-field="hours"][data-where="metric=ppo_latest"]', nz(h.ppo_latest?.hours, fmt2));
+    }
+    const tk = document.getElementById('takeaway');
+    if (cc.status === 'ok' && hl.status === 'ok') {
+      const n = Object.fromEntries(cc.data.map((r) => [r.status, r.n]));
+      const h = Object.fromEntries(hl.data.map((r) => [r.metric, r]));
+      const mk = (src, field, where, text) => {
+        const s = document.createElement('span');
+        s.dataset.source = src; s.dataset.field = field; s.dataset.where = where; s.textContent = text;
+        return s;
+      };
+      const parts = [];
+      parts.push(mk('claim_counts', 'n', 'status=Reproduced', fmtInt(n.Reproduced ?? 0)));
+      parts.push(document.createTextNode(' of '));
+      parts.push(mk('claim_counts', 'n', 'status=Checkable', fmtInt(n.Checkable ?? 0)));
+      parts.push(document.createTextNode(' checkable claims reproduced and '));
+      parts.push(mk('claim_counts', 'n', 'status=Partly reproduced', fmtInt(n['Partly reproduced'] ?? 0)));
+      parts.push(document.createTextNode(" partly reproduced so far. On LAFAN1, SuperMimic reached the paper's 0.82 target after "));
+      parts.push(mk('headline', 'hours', 'metric=supermimic_first_082', nz(h.supermimic_first_082?.hours, fmt2)));
+      parts.push(document.createTextNode(' h on one A6000 (paper: within 1.2 h on an H100), while PPO-Sim is at '));
+      parts.push(mk('headline', 'value', 'metric=ppo_latest', nz(h.ppo_latest?.value, fmt3)));
+      parts.push(document.createTextNode('. The BONES-SEED comparison against SONIC is blocked on dataset access.'));
+      tk.replaceChildren(...parts);
+      tk.classList.remove('dash-skeleton');
+    } else if (cc.status === 'error' || hl.status === 'error') {
+      tk.textContent = '';
+      tk.classList.remove('dash-skeleton');
+    }
+  }
+
+  function drawClaims() {
+    if (!ok('claims')) return;
+    fillTable('table-claims', rows('claims'), [
+      { key: 'id', cls: 'sm-mono' },
+      { key: 'where' },
+      { key: 'claim', cls: 'sm-wrap' },
+      { key: 'paper' },
+      { key: 'ours', cls: 'sm-wrap' },
+      { key: 'status', chip: (v) => STATUS_CLASS[v] },
+    ]);
+  }
+
+  function drawLafan() {
+    const el = document.getElementById('chart-lafan');
+    if (failLine(el, 'eval_curves') || failLine(el, 'paper_curves')) return;
+    if (!ok('eval_curves') || !ok('paper_curves')) return;
+    const ev = rows('eval_curves');
+    const pc = rows('paper_curves');
+    const pick = (run) => ev.filter((r) => r.run === run).map((r) => ({ x: r.hours, y: r.norm_return, failed: r.failed, clips: r.clips }));
+    const ppick = (s) => pc.filter((r) => r.series === s).map((r) => ({ x: r.hours, y: r.norm_return }));
+    const series = [
+      { name: 'SuperMimic, ours (1 A6000)', color: C[0], points: pick('smimic_lafan1_1gpu'), marks: true },
+      { name: 'PPO-Sim, ours (1 A6000)', color: C[1], points: pick('ppo_lafan1_1gpu'), marks: true },
+      { name: 'SuperMimic, paper (1 H100)', color: C[0], dash: true, opacity: 0.6, points: ppick('Paper SuperMimic, 1 H100') },
+      { name: 'PPO-Sim, paper (1 GPU)', color: C[1], dash: true, opacity: 0.6, points: ppick('Paper PPO-Sim, 1 GPU') },
+      { name: 'PPO-Sim, paper (8 GPUs)', color: 'var(--cds-chart-muted)', dash: true, points: ppick('Paper PPO-Sim, 8 GPUs') },
+    ];
+    legend('legend-lafan', series);
+    const xMax = lafanRange === 'early' ? 4 : d3.max(series.flatMap((s) => s.points), (p) => p.x);
+    lineChart(el, {
+      series, xDomain: [0, xMax], yDomain: [0, 1], height: 340,
+      fmtX: (v) => fmt2(v).replace(/\.00$/, ''), fmtY: d3.format('.1f'),
+      xLabel: 'Training wall-clock time (h)', yLabel: 'Normalized return',
+      refs: [{ y: 0.82 }], aria: 'Benchmark return over training time, ours and the paper',
+      tipHead: (d) => `${fmt2(d.x)} h`, tipValue: (d) => `${fmt3(d.y)}${d.failed !== undefined ? ` (${d.failed} of ${d.clips} failed)` : ''}`,
+    });
+  }
+
+  function drawClips() {
+    if (!ok('per_clip')) return;
+    const q = clipSearch.value.trim().toLowerCase();
+    const data = rows('per_clip').filter((r) => !q || r.clip.toLowerCase().includes(q))
+      .slice().sort((a, b) => {
+        const va = a[clipSort.key], vb = b[clipSort.key];
+        return (typeof va === 'number' ? va - vb : String(va).localeCompare(String(vb))) * clipSort.dir;
+      });
+    document.querySelectorAll('#table-clips th').forEach((th) => {
+      const b = th.querySelector('button');
+      th.setAttribute('aria-sort', b && b.dataset.sort === clipSort.key ? (clipSort.dir > 0 ? 'ascending' : 'descending') : 'none');
+    });
+    fillTable('table-clips', data, [
+      { key: 'clip', cls: 'sm-mono' },
+      { key: 'seconds', cls: 'sm-num', fmt: d3.format('.1f') },
+      { key: 'supermimic_return', cls: 'sm-num', fmt: fmt3 },
+      { key: 'supermimic_failed', chip: (v) => (v === 'yes' ? 'sm-bad' : 'sm-ok') },
+      { key: 'ppo_return', cls: 'sm-num', fmt: fmt3 },
+      { key: 'ppo_failed', chip: (v) => (v === 'yes' ? 'sm-bad' : 'sm-ok') },
+      { key: 'supermimic_checkpoint_hours', cls: 'sm-num', fmt: fmt2 },
+      { key: 'ppo_checkpoint_hours', cls: 'sm-num', fmt: fmt2 },
+    ]);
+  }
+
+  function drawAblations() {
+    if (ok('ablation')) {
+      fillTable('table-ablation', rows('ablation'), [
+        { key: 'config' },
+        { key: 'run', cls: 'sm-mono' },
+        { key: 'best_eval', cls: 'sm-num', fmt: fmt3 },
+        { key: 'best_eval_hours', cls: 'sm-num', fmt: fmt2 },
+        { key: 'latest_failed', cls: 'sm-num', fmt: fmtInt },
+        { key: 'train_hours', cls: 'sm-num', fmt: fmt2 },
+        { key: 'hours_to_eval_082', cls: 'sm-num', fmt: fmt2 },
+        { key: 'paper_final_train_return', cls: 'sm-num', fmt: fmt3 },
+        { key: 'paper_hours_to_train_082', cls: 'sm-num', fmt: fmt2 },
+      ]);
+    }
+    const el = document.getElementById('chart-abl');
+    if (failLine(el, 'eval_curves') || !ok('eval_curves')) return;
+    const ev = rows('eval_curves');
+    const series = Object.entries(RUN_LABEL).map(([run, name], i) => ({
+      name, color: C[i % C.length], marks: true,
+      points: ev.filter((r) => r.run === run).map((r) => ({ x: r.hours, y: r.norm_return, failed: r.failed, clips: r.clips })),
+    })).filter((s) => s.points.length);
+    legend('legend-abl', series);
+    lineChart(el, {
+      series, xDomain: [0, d3.max(series.flatMap((s) => s.points), (p) => p.x) || 1], yDomain: [0, 1], height: 300,
+      fmtX: (v) => fmt2(v).replace(/\.00$/, ''), fmtY: d3.format('.1f'),
+      xLabel: 'Training wall-clock time (h)', yLabel: 'Normalized return', refs: [{ y: 0.82 }],
+      aria: 'Benchmark return over time per horizon and critic setting',
+      tipHead: (d) => `${fmt2(d.x)} h`, tipValue: (d) => `${fmt3(d.y)} (${d.failed} of ${d.clips} failed)`,
+    });
+  }
+
+  function drawWorldModel() {
+    const sel = document.getElementById('chart-speed');
+    if (!failLine(sel, 'rollout_speed') && ok('rollout_speed')) {
+      const rs = rows('rollout_speed');
+      const series = [
+        { name: 'World model, ours', color: C[0], marks: true, points: rs.filter((r) => r.ours_world_model).map((r) => ({ x: r.envs, y: r.ours_world_model })) },
+        { name: 'MuJoCo Warp, ours', color: C[1], marks: true, points: rs.filter((r) => r.ours_mjwarp).map((r) => ({ x: r.envs, y: r.ours_mjwarp })) },
+        { name: 'World model, paper', color: C[0], dash: true, opacity: 0.6, points: rs.map((r) => ({ x: r.envs, y: r.paper_world_model })) },
+        { name: 'MuJoCo Warp, paper', color: C[1], dash: true, opacity: 0.6, points: rs.map((r) => ({ x: r.envs, y: r.paper_mjwarp })) },
+      ];
+      legend('legend-speed', series);
+      const ys = series.flatMap((s) => s.points.map((p) => p.y));
+      lineChart(sel, {
+        series, xLog: true, yLog: true, height: 280,
+        xDomain: d3.extent(rs, (r) => r.envs), yDomain: [Math.pow(10, Math.floor(Math.log10(d3.min(ys)))), Math.pow(10, Math.ceil(Math.log10(d3.max(ys))))],
+        xTickVals: rs.map((r) => r.envs).filter((v, i) => i % 2 === 0),
+        fmtX: (v) => fmtSi(v), fmtY: (v) => fmtSi(v),
+        xLabel: 'Parallel environments', yLabel: 'Control steps per second',
+        aria: 'Steps per second against parallel environments',
+        tipHead: (d) => `${fmtInt(d.x)} environments`, tipValue: (d) => `${fmtSi(d.y)} steps/s`,
+      });
+      const sp = dash.data('speedup');
+      const ratio = sp.status === 'ok' ? Object.fromEntries(sp.data.map((r) => [r.envs, r])) : {};
+      fillTable('table-speed', rs, [
+        { key: 'envs', cls: 'sm-num', fmt: fmtInt },
+        { key: 'ours_mjwarp', cls: 'sm-num', fmt: fmtSi },
+        { key: 'ours_world_model', cls: 'sm-num', fmt: fmtSi },
+        { value: (r) => ratio[r.envs]?.ours_ratio ?? null, cls: 'sm-num', fmt: (v) => `${d3.format('.1f')(v)}×` },
+        { key: 'paper_mjwarp', cls: 'sm-num', fmt: fmtSi },
+        { key: 'paper_world_model', cls: 'sm-num', fmt: fmtSi },
+        { value: (r) => ratio[r.envs]?.paper_ratio ?? null, cls: 'sm-num', fmt: (v) => `${d3.format('.1f')(v)}×` },
+      ]);
+    }
+    const wel = document.getElementById('chart-wm');
+    if (failLine(wel, 'train_curves') || !ok('train_curves')) return;
+    const tr = rows('train_curves');
+    const key = wmMetric.value;
+    const series = Object.entries(RUN_LABEL).map(([run, name], i) => ({
+      name, color: C[i % C.length],
+      points: tr.filter((r) => r.run === run && r[key] !== undefined && r[key] !== null).map((r) => ({ x: r.hours, y: r[key] })),
+    })).filter((s) => s.points.length);
+    legend('legend-wm', series);
+    const ymax = d3.max(series.flatMap((s) => s.points), (p) => p.y) || 1;
+    const isShare = key === 'train_return' || key === 'fell_share';
+    lineChart(wel, {
+      series, xDomain: [0, d3.max(series.flatMap((s) => s.points), (p) => p.x) || 1],
+      yDomain: isShare ? [0, 1] : [0, ymax * 1.05], height: 280,
+      fmtX: (v) => fmt2(v).replace(/\.00$/, ''), fmtY: isShare ? d3.format('.1f') : (key === 'episode_steps' ? fmtInt : d3.format('.2~f')),
+      xLabel: 'Training wall-clock time (h)', yLabel: wmMetric.options[wmMetric.selectedIndex].text,
+      aria: 'Training curves of the SuperMimic runs',
+      tipHead: (d) => `${fmt2(d.x)} h`, tipValue: (d) => (key === 'episode_steps' ? fmtInt(d.y) : d3.format('.4~f')(d.y)),
+    });
+  }
+
+  function drawFig4b() {
+    const el = document.getElementById('chart-fig4b');
+    if (failLine(el, 'fig4b') || !ok('fig4b')) return;
+    const f4 = rows('fig4b');
+    const style = {
+      'Ours SuperMimic': { color: C[0] },
+      'Ours PPO-WM 16k x 32': { color: C[1] },
+      'Paper SuperMimic': { color: C[0], dash: true, opacity: 0.6 },
+      'Paper PPO-WM 16k x 32': { color: C[1], dash: true, opacity: 0.6 },
+      'Paper PPO-WM 8k x 32': { color: 'var(--cds-chart-muted)', dash: true },
+      'Paper PPO-WM 8k x 24': { color: 'var(--cds-chart-muted)', dash: true, opacity: 0.7 },
+      'Paper PPO-WM 4k x 32': { color: 'var(--cds-chart-muted)', dash: true, opacity: 0.45 },
+    };
+    const names = [...new Set(f4.map((r) => r.series))];
+    const series = names.map((name) => ({
+      name, ...(style[name] || { color: 'var(--cds-chart-muted)' }),
+      points: f4.filter((r) => r.series === name && r.imagined_steps > 0).map((r) => ({ x: r.imagined_steps, y: r.train_return })),
+    })).filter((s) => s.points.length);
+    legend('legend-fig4b', series);
+    const xs = series.flatMap((s) => s.points.map((p) => p.x));
+    const lo = Math.pow(10, Math.floor(Math.log10(d3.min(xs))));
+    const hi = Math.pow(10, Math.ceil(Math.log10(d3.max(xs))));
+    const ticks = d3.range(Math.log10(lo), Math.log10(hi) + 1).map((e) => Math.pow(10, e));
+    lineChart(el, {
+      series, xLog: true, xDomain: [lo, hi], xTickVals: ticks, yDomain: [-0.1, 1], height: 300,
+      fmtX: (v) => fmtSi(v), fmtY: d3.format('.1f'),
+      xLabel: 'Imagined steps', yLabel: 'Training return',
+      aria: 'Training return against imagined steps, SuperMimic and PPO-WM',
+      tipHead: (d) => `${fmtSi(d.x)} imagined steps`, tipValue: (d) => fmt3(d.y),
+    });
+  }
+
+  function drawImplementation() {
+    if (!ok('fidelity')) return;
+    const k = fidKind.value;
+    fillTable('table-fidelity', rows('fidelity').filter((r) => !k || r.kind === k), [
+      { key: 'aspect' },
+      { key: 'paper', cls: 'sm-wrap' },
+      { key: 'ours', cls: 'sm-wrap' },
+      { key: 'kind', chip: (v) => (v === 'Same as paper' ? 'sm-ok' : v === 'Deviation' ? 'sm-bad' : 'sm-warn') },
+    ]);
+  }
+
+  function drawRuns() {
+    if (!ok('runs')) return;
+    fillTable('table-runs', rows('runs'), [
+      { key: 'run', cls: 'sm-mono' },
+      { key: 'label' },
+      { key: 'figure' },
+      { key: 'slurm_job', cls: 'sm-mono' },
+      { key: 'status', chip: (v) => (v === 'finished' ? 'sm-ok' : v === 'running' ? 'sm-warn' : '') },
+      { key: 'iterations', cls: 'sm-num', fmt: fmtInt },
+      { key: 'train_hours', cls: 'sm-num', fmt: fmt2 },
+      { key: 'evals', cls: 'sm-mono' },
+    ]);
+  }
+
+  function draw() {
+    drawSummary();
+    if (current === 'claims') drawClaims();
+    if (current === 'lafan') { drawLafan(); drawClips(); }
+    if (current === 'ablations') drawAblations();
+    if (current === 'worldmodel') { drawWorldModel(); drawFig4b(); }
+    if (current === 'implementation') drawImplementation();
+    if (current === 'runs') drawRuns();
+  }
+
+  dash.onData(draw);
+  const named = location.hash.slice(1);
+  if (pages.some((p) => p.id === named)) show(named);
+})();
+</script>

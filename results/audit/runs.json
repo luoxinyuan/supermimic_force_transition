@@ -1,0 +1,156 @@
+[
+{
+"run": "smimic_lafan1_1gpu",
+"label": "SuperMimic H=32, critic (main)",
+"figure": "Fig. 3a",
+"slurm_job": "31934769",
+"status": "finished",
+"iterations": 155600,
+"train_hours": 11.994,
+"log": "runs/smimic_lafan1_1gpu/log.jsonl",
+"evals": "runs/smimic_lafan1_1gpu/eval.jsonl"
+},
+{
+"run": "ppo_lafan1_1gpu",
+"label": "PPO-Sim, 1 GPU",
+"figure": "Fig. 3a",
+"slurm_job": "31934725",
+"status": "running",
+"iterations": 19300,
+"train_hours": 17.654,
+"log": "runs/ppo_lafan1_1gpu/log.jsonl",
+"evals": "runs/ppo_lafan1_1gpu/eval.jsonl"
+},
+{
+"run": "abl_H8_critic_true",
+"label": "H=8, critic",
+"figure": "Fig. 3b,c",
+"slurm_job": "31936235",
+"status": "stopped",
+"iterations": 40100,
+"train_hours": 2.304,
+"log": "runs/abl_H8_critic_true/log.jsonl",
+"evals": "runs/abl_H8_critic_true/eval.jsonl"
+},
+{
+"run": "abl_H16_critic_true",
+"label": "H=16, critic",
+"figure": "Fig. 3b,c",
+"slurm_job": "31936233",
+"status": "finished",
+"iterations": 100000,
+"train_hours": 5.998,
+"log": "runs/abl_H16_critic_true/log.jsonl",
+"evals": "runs/abl_H16_critic_true/eval.jsonl"
+},
+{
+"run": "abl_H16_critic_false",
+"label": "H=16, no critic",
+"figure": "Fig. 3b,c",
+"slurm_job": "31936234",
+"status": "stopped",
+"iterations": 45300,
+"train_hours": 2.568,
+"log": "runs/abl_H16_critic_false/log.jsonl",
+"evals": "runs/abl_H16_critic_false/eval.jsonl"
+},
+{
+"run": "abl_H32_critic_false",
+"label": "H=32, no critic",
+"figure": "Fig. 3b,c",
+"slurm_job": "31933783 (dev)",
+"status": "finished",
+"iterations": 86600,
+"train_hours": 5.998,
+"log": "runs/abl_H32_critic_false/log.jsonl",
+"evals": "runs/abl_H32_critic_false/eval.jsonl"
+},
+{
+"run": "abl_H64_critic_true",
+"label": "H=64, critic",
+"figure": "Fig. 3b,c",
+"slurm_job": "31936236",
+"status": "finished",
+"iterations": 44400,
+"train_hours": 5.992,
+"log": "runs/abl_H64_critic_true/log.jsonl",
+"evals": "runs/abl_H64_critic_true/eval.jsonl"
+},
+{
+"run": "f4b_smimic_wrs",
+"label": "SuperMimic, walk/run/sprint",
+"figure": "Fig. 4b",
+"slurm_job": "31937943",
+"status": "finished",
+"iterations": 59400,
+"train_hours": 4.999,
+"log": "runs/f4b_smimic_wrs/log.jsonl",
+"evals": "runs/f4b_smimic_wrs/eval.jsonl"
+},
+{
+"run": "f4b_ppowm_16kx32",
+"label": "PPO-WM 16k\u00d732, walk/run/sprint",
+"figure": "Fig. 4b",
+"slurm_job": "31937944",
+"status": "finished",
+"iterations": 13300,
+"train_hours": 4.985,
+"log": "runs/f4b_ppowm_16kx32/log.jsonl",
+"evals": "runs/f4b_ppowm_16kx32/eval.jsonl"
+},
+{
+"run": "smimic_lafan1_2gpu",
+"label": "SuperMimic H=32, 2 GPUs (data parallel)",
+"figure": "Fig. 3a (extra)",
+"slurm_job": "31945786",
+"status": "running",
+"iterations": 52500,
+"train_hours": 4.877,
+"log": "runs/smimic_lafan1_2gpu/log.jsonl",
+"evals": "runs/smimic_lafan1_2gpu/eval.jsonl"
+},
+{
+"run": "abl_H128_critic_true",
+"label": "H=128, critic",
+"figure": "Fig. 3b,c",
+"slurm_job": "31945793",
+"status": "running",
+"iterations": 15300,
+"train_hours": 5.056,
+"log": "runs/abl_H128_critic_true/log.jsonl",
+"evals": "runs/abl_H128_critic_true/eval.jsonl"
+},
+{
+"run": "abl_H64_critic_false",
+"label": "H=64, no critic",
+"figure": "Fig. 3b,c",
+"slurm_job": "31945789",
+"status": "running",
+"iterations": 45000,
+"train_hours": 5.116,
+"log": "runs/abl_H64_critic_false/log.jsonl",
+"evals": "runs/abl_H64_critic_false/eval.jsonl"
+},
+{
+"run": "vel_rl",
+"label": "Velocity encoder, RL",
+"figure": "Fig. 6 / Sec. 5.5",
+"slurm_job": "31941569",
+"status": "running",
+"iterations": 94500,
+"train_hours": 11.173,
+"log": "runs/vel_rl/log.jsonl",
+"evals": "runs/vel_rl/eval.jsonl"
+},
+{
+"run": "vel_distill",
+"label": "Velocity encoder, distillation",
+"figure": "Fig. 6 / Sec. 5.5",
+"slurm_job": "31941570",
+"status": "finished",
+"iterations": 100000,
+"train_hours": 10.286,
+"log": "runs/vel_distill/log.jsonl",
+"evals": "runs/vel_distill/eval.jsonl"
+}
+]

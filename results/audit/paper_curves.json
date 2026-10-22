@@ -1,0 +1,432 @@
+[
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.0021125,
+"norm_return": 0.001519
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.077808,
+"norm_return": 0.524
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.151899,
+"norm_return": 0.6166
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.225991,
+"norm_return": 0.6672
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.299996,
+"norm_return": 0.67
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.373919,
+"norm_return": 0.696
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.44801,
+"norm_return": 0.7656
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.522101,
+"norm_return": 0.7565
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.596276,
+"norm_return": 0.777
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.670791,
+"norm_return": 0.779
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.745049,
+"norm_return": 0.7909
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 0.894413,
+"norm_return": 0.7894
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 1.04353,
+"norm_return": 0.8102
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 1.19272,
+"norm_return": 0.8331
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 1.342,
+"norm_return": 0.8309
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 1.49103,
+"norm_return": 0.8483
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 1.79009,
+"norm_return": 0.8282
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 2.08984,
+"norm_return": 0.8519
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 2.38983,
+"norm_return": 0.8509
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 2.69008,
+"norm_return": 0.8616
+},
+{
+"series": "Paper SuperMimic, 1 H100",
+"hours": 2.98771,
+"norm_return": 0.8661
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 0.00236111,
+"norm_return": 0.001764
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 0.24,
+"norm_return": 0.025203
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 0.479583,
+"norm_return": 0.21044
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 0.720972,
+"norm_return": 0.2256
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 0.960417,
+"norm_return": 0.2352
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 1.19861,
+"norm_return": 0.2651
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 1.43987,
+"norm_return": 0.3023
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 1.67875,
+"norm_return": 0.3301
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 1.91973,
+"norm_return": 0.3662
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 2.16125,
+"norm_return": 0.3731
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 2.40778,
+"norm_return": 0.4068
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 2.65042,
+"norm_return": 0.4044
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 2.88959,
+"norm_return": 0.3948
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 3.1318,
+"norm_return": 0.43
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 3.37181,
+"norm_return": 0.4195
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 3.61264,
+"norm_return": 0.449
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 3.85361,
+"norm_return": 0.4474
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 4.09305,
+"norm_return": 0.4878
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 4.32972,
+"norm_return": 0.4612
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 4.57042,
+"norm_return": 0.4728
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 4.81069,
+"norm_return": 0.4795
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 5.0457,
+"norm_return": 0.4707
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 5.28334,
+"norm_return": 0.534
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 5.52069,
+"norm_return": 0.5233
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 5.75889,
+"norm_return": 0.4984
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 5.99695,
+"norm_return": 0.5348
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 7.18611,
+"norm_return": 0.5412
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 8.38444,
+"norm_return": 0.5449
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 9.62625,
+"norm_return": 0.5499
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 11.9934,
+"norm_return": 0.5881
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 14.0222,
+"norm_return": 0.6166
+},
+{
+"series": "Paper PPO-Sim, 1 GPU",
+"hours": 18.6919,
+"norm_return": 0.602
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 0.00138889,
+"norm_return": 0.001772
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 0.19125,
+"norm_return": 0.3744
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 0.377223,
+"norm_return": 0.3994
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 0.563195,
+"norm_return": 0.388
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 0.748611,
+"norm_return": 0.4448
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 0.934584,
+"norm_return": 0.4885
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 1.12069,
+"norm_return": 0.5124
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 1.30653,
+"norm_return": 0.5082
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 1.49194,
+"norm_return": 0.5438
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 1.67639,
+"norm_return": 0.554
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 1.86055,
+"norm_return": 0.5414
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 2.04486,
+"norm_return": 0.5543
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 2.22903,
+"norm_return": 0.5772
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 2.41305,
+"norm_return": 0.5883
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 2.59667,
+"norm_return": 0.5909
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 2.78097,
+"norm_return": 0.603
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 2.96445,
+"norm_return": 0.6032
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 3.14792,
+"norm_return": 0.605
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 3.33125,
+"norm_return": 0.6189
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 3.51472,
+"norm_return": 0.6225
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 3.69819,
+"norm_return": 0.6107
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 3.88138,
+"norm_return": 0.6108
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 4.06458,
+"norm_return": 0.621
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 4.24833,
+"norm_return": 0.6094
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 4.43153,
+"norm_return": 0.6318
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 4.61486,
+"norm_return": 0.6354
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 5.53014,
+"norm_return": 0.6449
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 6.445,
+"norm_return": 0.6744
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 7.36055,
+"norm_return": 0.6688
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 9.19111,
+"norm_return": 0.6944
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 11.0203,
+"norm_return": 0.7018
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 14.4397,
+"norm_return": 0.7188
+},
+{
+"series": "Paper PPO-Sim, 8 GPUs",
+"hours": 18.0328,
+"norm_return": 0.7218
+}
+]

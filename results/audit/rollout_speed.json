@@ -1,0 +1,58 @@
+[
+{
+"envs": 512,
+"ours_mjwarp": 50700,
+"ours_world_model": 553000,
+"paper_mjwarp": 23300.0,
+"paper_world_model": 216000.0
+},
+{
+"envs": 1024,
+"ours_mjwarp": 80800,
+"ours_world_model": 1089000,
+"paper_mjwarp": 44000.0,
+"paper_world_model": 422000.0
+},
+{
+"envs": 2048,
+"ours_mjwarp": 108500,
+"ours_world_model": 1681000,
+"paper_mjwarp": 78400.0,
+"paper_world_model": 843000.0
+},
+{
+"envs": 4096,
+"ours_mjwarp": 125700,
+"ours_world_model": 1839000,
+"paper_mjwarp": 132000.0,
+"paper_world_model": 1680000.0
+},
+{
+"envs": 8192,
+"ours_mjwarp": 115800,
+"ours_world_model": 2040000,
+"paper_mjwarp": 197000.0,
+"paper_world_model": 3350000.0
+},
+{
+"envs": 16384,
+"ours_mjwarp": 92440,
+"ours_world_model": 1988000,
+"paper_mjwarp": 261000.0,
+"paper_world_model": 6710000.0
+},
+{
+"envs": 32768,
+"ours_mjwarp": null,
+"ours_world_model": null,
+"paper_mjwarp": 305000.0,
+"paper_world_model": 13400000.0
+},
+{
+"envs": 65536,
+"ours_mjwarp": null,
+"ours_world_model": null,
+"paper_mjwarp": 322000.0,
+"paper_world_model": 20000000.0
+}
+]
