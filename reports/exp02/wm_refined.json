@@ -1,0 +1,185 @@
+{
+  "checkpoint": "runs/exp02_wm_refine/last.pt",
+  "seed": 9137,
+  "valid_windows": 256,
+  "horizons": {
+    "1": {
+      "force_aware_all": {
+        "normalized_mse": 0.0010553201427683234,
+        "root_position_rmse_m": 0.00010984661639668047,
+        "root_rotation_rmse_rad": 0.00039588400977663696,
+        "joint_position_rmse_rad": 0.0008175365510396659,
+        "joint_velocity_rmse_rad_s": 0.054940156638622284
+      },
+      "force_aware_forced": {
+        "normalized_mse": 0.0013526605907827616,
+        "root_position_rmse_m": 0.00012404304288793355,
+        "root_rotation_rmse_rad": 0.00045220437459647655,
+        "joint_position_rmse_rad": 0.0009259465150535107,
+        "joint_velocity_rmse_rad_s": 0.06236454099416733
+      },
+      "force_aware_zero_force": {
+        "normalized_mse": 0.0002332609728910029,
+        "root_position_rmse_m": 5.372477971832268e-05,
+        "root_rotation_rmse_rad": 0.00015706346312072128,
+        "joint_position_rmse_rad": 0.0003818460972979665,
+        "joint_velocity_rmse_rad_s": 0.024710260331630707
+      },
+      "force_blind_all": {
+        "normalized_mse": 0.0017090026522055268,
+        "root_position_rmse_m": 0.00018589785031508654,
+        "root_rotation_rmse_rad": 0.00038477021735161543,
+        "joint_position_rmse_rad": 0.0008875829516910017,
+        "joint_velocity_rmse_rad_s": 0.05733151361346245
+      },
+      "force_blind_forced": {
+        "normalized_mse": 0.0022427812218666077,
+        "root_position_rmse_m": 0.00021450809435918927,
+        "root_rotation_rmse_rad": 0.0004389472014736384,
+        "joint_position_rmse_rad": 0.0010099579812958837,
+        "joint_velocity_rmse_rad_s": 0.06522980332374573
+      },
+      "force_blind_zero_force": {
+        "normalized_mse": 0.0002332609728910029,
+        "root_position_rmse_m": 5.372477971832268e-05,
+        "root_rotation_rmse_rad": 0.00015706346312072128,
+        "joint_position_rmse_rad": 0.0003818460972979665,
+        "joint_velocity_rmse_rad_s": 0.024710260331630707
+      }
+    },
+    "4": {
+      "force_aware_all": {
+        "normalized_mse": 0.004324645735323429,
+        "root_position_rmse_m": 0.00046566384844481945,
+        "root_rotation_rmse_rad": 0.001649866928346455,
+        "joint_position_rmse_rad": 0.002046040026471019,
+        "joint_velocity_rmse_rad_s": 0.063979871571064
+      },
+      "force_aware_forced": {
+        "normalized_mse": 0.005450377706438303,
+        "root_position_rmse_m": 0.0005170857184566557,
+        "root_rotation_rmse_rad": 0.0018998024752363563,
+        "joint_position_rmse_rad": 0.002282117260619998,
+        "joint_velocity_rmse_rad_s": 0.07397700846195221
+      },
+      "force_aware_zero_force": {
+        "normalized_mse": 0.0012123269261792302,
+        "root_position_rmse_m": 0.00027772068278864026,
+        "root_rotation_rmse_rad": 0.0005188885843381286,
+        "joint_position_rmse_rad": 0.0011667725630104542,
+        "joint_velocity_rmse_rad_s": 0.016745584085583687
+      },
+      "force_blind_all": {
+        "normalized_mse": 0.011083950288593769,
+        "root_position_rmse_m": 0.001108371652662754,
+        "root_rotation_rmse_rad": 0.0021434337832033634,
+        "joint_position_rmse_rad": 0.003227625275030732,
+        "joint_velocity_rmse_rad_s": 0.07959243655204773
+      },
+      "force_blind_forced": {
+        "normalized_mse": 0.014654535800218582,
+        "root_position_rmse_m": 0.001282550860196352,
+        "root_rotation_rmse_rad": 0.002481671515852213,
+        "joint_position_rmse_rad": 0.003700434463098645,
+        "joint_velocity_rmse_rad_s": 0.09233036637306213
+      },
+      "force_blind_zero_force": {
+        "normalized_mse": 0.0012123269261792302,
+        "root_position_rmse_m": 0.00027772068278864026,
+        "root_rotation_rmse_rad": 0.0005188885843381286,
+        "joint_position_rmse_rad": 0.0011667725630104542,
+        "joint_velocity_rmse_rad_s": 0.016745584085583687
+      }
+    },
+    "8": {
+      "force_aware_all": {
+        "normalized_mse": 0.011538723483681679,
+        "root_position_rmse_m": 0.0011525340378284454,
+        "root_rotation_rmse_rad": 0.0036393101327121258,
+        "joint_position_rmse_rad": 0.003179202089086175,
+        "joint_velocity_rmse_rad_s": 0.06036572530865669
+      },
+      "force_aware_forced": {
+        "normalized_mse": 0.014115136116743088,
+        "root_position_rmse_m": 0.0012705265544354916,
+        "root_rotation_rmse_rad": 0.0042011369951069355,
+        "joint_position_rmse_rad": 0.003472421318292618,
+        "joint_velocity_rmse_rad_s": 0.06953570991754532
+      },
+      "force_aware_zero_force": {
+        "normalized_mse": 0.004415696486830711,
+        "root_position_rmse_m": 0.0007334143738262355,
+        "root_rotation_rmse_rad": 0.0010325355688109994,
+        "joint_position_rmse_rad": 0.002171425148844719,
+        "joint_velocity_rmse_rad_s": 0.01872752234339714
+      },
+      "force_blind_all": {
+        "normalized_mse": 0.037874363362789154,
+        "root_position_rmse_m": 0.0026133665814995766,
+        "root_rotation_rmse_rad": 0.004907116759568453,
+        "joint_position_rmse_rad": 0.006631928496062756,
+        "joint_velocity_rmse_rad_s": 0.07975131273269653
+      },
+      "force_blind_forced": {
+        "normalized_mse": 0.04997643828392029,
+        "root_position_rmse_m": 0.0030175214633345604,
+        "root_rotation_rmse_rad": 0.0056924414820969105,
+        "joint_position_rmse_rad": 0.00762794679030776,
+        "joint_velocity_rmse_rad_s": 0.09237933158874512
+      },
+      "force_blind_zero_force": {
+        "normalized_mse": 0.004415696486830711,
+        "root_position_rmse_m": 0.0007334143738262355,
+        "root_rotation_rmse_rad": 0.0010325355688109994,
+        "joint_position_rmse_rad": 0.002171425148844719,
+        "joint_velocity_rmse_rad_s": 0.01872752234339714
+      }
+    },
+    "16": {
+      "force_aware_all": {
+        "normalized_mse": 0.04899418354034424,
+        "root_position_rmse_m": 0.003020763862878084,
+        "root_rotation_rmse_rad": 0.008128784596920013,
+        "joint_position_rmse_rad": 0.006273568607866764,
+        "joint_velocity_rmse_rad_s": 0.056999728083610535
+      },
+      "force_aware_forced": {
+        "normalized_mse": 0.059733860194683075,
+        "root_position_rmse_m": 0.003336863359436393,
+        "root_rotation_rmse_rad": 0.009393498301506042,
+        "joint_position_rmse_rad": 0.006841594353318214,
+        "joint_velocity_rmse_rad_s": 0.06545709818601608
+      },
+      "force_aware_zero_force": {
+        "normalized_mse": 0.01930210553109646,
+        "root_position_rmse_m": 0.0018891645595431328,
+        "root_rotation_rmse_rad": 0.002193014370277524,
+        "joint_position_rmse_rad": 0.004331430420279503,
+        "joint_velocity_rmse_rad_s": 0.019638389348983765
+      },
+      "force_blind_all": {
+        "normalized_mse": 0.12528926134109497,
+        "root_position_rmse_m": 0.005266491323709488,
+        "root_rotation_rmse_rad": 0.009818144142627716,
+        "joint_position_rmse_rad": 0.010905264876782894,
+        "joint_velocity_rmse_rad_s": 0.06940335035324097
+      },
+      "force_blind_forced": {
+        "normalized_mse": 0.16362504661083221,
+        "root_position_rmse_m": 0.006039634346961975,
+        "root_rotation_rmse_rad": 0.011380818672478199,
+        "joint_position_rmse_rad": 0.012456090189516544,
+        "joint_velocity_rmse_rad_s": 0.08012231439352036
+      },
+      "force_blind_zero_force": {
+        "normalized_mse": 0.01930210553109646,
+        "root_position_rmse_m": 0.0018891645595431328,
+        "root_rotation_rmse_rad": 0.002193014370277524,
+        "joint_position_rmse_rad": 0.004331430420279503,
+        "joint_velocity_rmse_rad_s": 0.019638389348983765
+      }
+    }
+  },
+  "one_step_forced_mse_ratio": 0.603117494294418,
+  "force_conditioning_passed": true
+}

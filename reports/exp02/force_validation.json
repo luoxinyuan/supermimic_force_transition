@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "point_force_generalized_force_max_error": 1.3785363822682584e-10,
+  "vertical_velocities": [
+    -0.24145591259002686,
+    -0.23522880673408508,
+    -0.2476830780506134,
+    -0.22900186479091644,
+    -0.24145589768886566,
+    -0.24145589768886566,
+    -0.24145589768886566,
+    -0.24145591259002686
+  ],
+  "causal_delay_checked": true,
+  "time_varying_replay_checked": true,
+  "multi_contact_sum_and_permutation_checked": true
+}

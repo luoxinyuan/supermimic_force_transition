@@ -1,0 +1,18 @@
+{
+  "checkpoint": "runs/exp02_teacher_seed0/ckpt_0002000.pt",
+  "sha256": "635c1e7589f12331ef8557f6509abd870b41d044cee49ab2cfffada357cd0db0",
+  "core_passed": true,
+  "continuous_cycles_25N_passed": true,
+  "all_tested_magnitudes_passed": false,
+  "standing_to_squat_min_height_m": 0.5869772434234619,
+  "standing_to_squat_released_height_m": 0.6996310949325562,
+  "squat_to_stand_released_height_m": 0.7818751931190491,
+  "frozen_baseline_with_trainable_force_latent": true,
+  "teacher_is_not_deployable_student": true,
+  "training_stopped_after_acceptance": true,
+  "refined_checkpoint": "runs/exp02_wm_refine/last.pt",
+  "refined_sha256": "d15c864c2b82cef6dadecf631927de0ceb0661588d0078ff3d9b21ddbe975856",
+  "refined_policy_bitwise_identical": true,
+  "refined_wm_conditioning_passed": true,
+  "refined_one_step_mse_ratio": 0.603117494294418
+}

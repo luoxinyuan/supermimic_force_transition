@@ -29,6 +29,7 @@ FOOT_GEOM_RE = r"^(left|right)_foot[1-7]_collision$"
 
 @dataclass
 class EnvCfg:
+  command_interface: str = "full"
   num_envs: int = 4096
   episode_length_s: float = 10.0
   domain_rand: bool = True
@@ -116,8 +117,16 @@ class TrackingSimEnv:
           scale[k] = val
     assert (scale > 0).all()
     self.action_scale = scale.to(device)
-    self.task = Task(self.kin, self.q0, lim, self.action_scale, task_cfg, device,
+    task_class = Task
+    if cfg.command_interface == "ceer":
+      from .ceer.interface import CEERTask
+      task_class = CEERTask
+    elif cfg.command_interface != "full":
+      raise ValueError(cfg.command_interface)
+    self.task = task_class(self.kin, self.q0, lim, self.action_scale, task_cfg, device,
                      compile_sizes=(n,) if cfg.compile else ())
+    if cfg.command_interface == "ceer" and lib.ceer_wrist is None:
+      self.task.install_cache(lib)
     self.tcfg = task_cfg
 
     # Domain randomization fields.
@@ -318,7 +327,7 @@ class TrackingSimEnv:
 
   def ref_future(self, frames: torch.Tensor) -> dict:
     K = self.tcfg.future
-    idx = frames[:, None] + torch.arange(1, K + 1, device=self.device)
+    idx = frames[:, None] + torch.arange(K, device=self.device) + (0 if self.cfg.command_interface == "ceer" else 1)
     idx = self.lib.clamp_to_clip(idx, frames)
     return self.lib.frame(idx)
 

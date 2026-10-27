@@ -1,0 +1,74 @@
+{
+  "stand_to_squat": {
+    "no_force": {
+      "final_height": 0.782826840877533,
+      "failed": 0,
+      "destination_joint_rmse": 0.2939065098762512,
+      "final_knee": 0.3230409324169159
+    },
+    "force": {
+      "final_height": 0.6996310949325562,
+      "failed": 0,
+      "destination_joint_rmse": 0.09550158679485321,
+      "final_knee": 1.0704964399337769
+    },
+    "blinded": {
+      "final_height": 0.7828266024589539,
+      "failed": 0,
+      "destination_joint_rmse": 0.2939133644104004,
+      "final_knee": 0.32301846146583557
+    },
+    "latent_only": {
+      "final_height": 0.7046722173690796,
+      "failed": 0,
+      "destination_joint_rmse": 0.09294598549604416,
+      "final_knee": 1.0454429388046265
+    },
+    "force_minus_no_force_height": -0.0831957459449768,
+    "action_difference_rms": 1.8866510391235352,
+    "active_height_advantage_over_blinded": 0.0831955075263977,
+    "latent_only_height_change": 0.07815462350845337,
+    "passed": true
+  },
+  "squat_to_stand": {
+    "no_force": {
+      "final_height": 0.7060313820838928,
+      "failed": 0,
+      "destination_joint_rmse": 0.25011762976646423,
+      "final_knee": 1.0372868776321411
+    },
+    "force": {
+      "final_height": 0.7818751931190491,
+      "failed": 0,
+      "destination_joint_rmse": 0.0964687168598175,
+      "final_knee": 0.3494211435317993
+    },
+    "blinded": {
+      "final_height": 0.7060317397117615,
+      "failed": 0,
+      "destination_joint_rmse": 0.2501213848590851,
+      "final_knee": 1.037298560142517
+    },
+    "latent_only": {
+      "final_height": 0.7817535400390625,
+      "failed": 0,
+      "destination_joint_rmse": 0.09783624112606049,
+      "final_knee": 0.3506910800933838
+    },
+    "force_minus_no_force_height": 0.07584381103515625,
+    "action_difference_rms": 2.225961685180664,
+    "active_height_advantage_over_blinded": 0.0758434534072876,
+    "latent_only_height_change": 0.07572215795516968,
+    "passed": true
+  },
+  "passed": true,
+  "protocol": {
+    "steps": 500,
+    "dt": 0.02,
+    "force_onset_s": 1.0,
+    "force_end_s": 4.5,
+    "magnitude_N": 25,
+    "repeats_per_case": 4,
+    "paired_deterministic": true
+  }
+}

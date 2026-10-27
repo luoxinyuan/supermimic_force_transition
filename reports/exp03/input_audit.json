@@ -1,0 +1,17 @@
+{
+  "causal_prefix": true,
+  "step_sequence_equivalence": true,
+  "deployment_export_equivalence": true,
+  "export_batch_sizes_tested": [
+    1,
+    2,
+    4
+  ],
+  "inputs": [
+    "obs_history[batch,930]",
+    "hidden[1,batch,128]"
+  ],
+  "privileged_parameters_absent": true,
+  "reset": "zero hidden at episode/robot reset; preserve across force removal",
+  "latent": "total teacher control latent, not calibrated force vector"
+}

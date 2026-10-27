@@ -19,9 +19,9 @@ from .sim_env import EnvCfg, TrackingSimEnv
 from .task import GOAL_FRAME_DIM, OBS_DIM, TaskCfg
 
 
-def make_eval_env(lib, num_envs, device):
-  cfg = EnvCfg(num_envs=num_envs, episode_length_s=1e9, obs_noise=False, reset_noise=False, domain_rand=True)
-  env = TrackingSimEnv(lib, cfg, TaskCfg(), device)
+def make_eval_env(lib, num_envs, device, command_interface="full"):
+  cfg = EnvCfg(command_interface=command_interface, num_envs=num_envs, episode_length_s=1e9, obs_noise=False, reset_noise=False, domain_rand=True)
+  env = TrackingSimEnv(lib, cfg, TaskCfg(future=1) if command_interface == "ceer" else TaskCfg(), device)
   env.eval_mode = True
   return env
 
@@ -85,7 +85,8 @@ def load_supermimic_policy(path, device):
 
   ck = torch.load(path, map_location=device)
   tc = TaskCfg()
-  pol = Policy(OBS_DIM * tc.history, GOAL_FRAME_DIM * tc.future).to(device)
+  goal_dim = 18 if ck["cfg"].get("command_interface", "full") == "ceer" else GOAL_FRAME_DIM * tc.future
+  pol = Policy(OBS_DIM * tc.history, goal_dim).to(device)
   pol.load_state_dict(ck["policy"])
   pol.eval()
   return pol, ck
@@ -108,7 +109,7 @@ def main():
   torch.backends.cuda.matmul.allow_tf32 = True
   lib = MotionLibrary(args.motions, device)
   n = args.num_envs or min(lib.num_clips, 4096)
-  env = make_eval_env(lib, n, device)
+  env = None
   out_path = os.path.join(args.run, args.out)
   done = set()
   if os.path.exists(out_path):
@@ -127,6 +128,11 @@ def main():
         from .ppo import load_ppo_policy
 
         act, meta = load_ppo_policy(c, device)
+      interface = ck["cfg"].get("command_interface", "full") if args.kind == "supermimic" else "full"
+      if env is None:
+        env = make_eval_env(lib, n, device, command_interface=interface)
+      elif env.cfg.command_interface != interface:
+        raise ValueError("Mixed command interfaces in one evaluation run")
       res = evaluate(act, lib, env, verbose=lib.num_clips > n)
       rec = {"ckpt": os.path.basename(c), **meta, **{k: v for k, v in res.items() if not k.startswith("per_clip")}}
       print(json.dumps(rec), flush=True)

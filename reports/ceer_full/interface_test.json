@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "mujoco_fk_frames": 128,
+  "max_hand_position_error_m": 8.190689115838978e-08,
+  "max_hand_rotation_matrix_error": 1.7011181613346693e-07,
+  "world_translation_yaw_invariant": true,
+  "command_dim": 18
+}

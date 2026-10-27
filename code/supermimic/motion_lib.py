@@ -10,6 +10,8 @@ from .rotations import quat_normalize, quat_to_mat
 
 class MotionLibrary:
   def __init__(self, path: str, device: str, bin_seconds: float = 1.0, clip_ids=None, prefixes: str = ""):
+    self.path = path
+    self.ceer_wrist = None
     d = np.load(path, allow_pickle=False)
     starts = d["starts"].astype(np.int64)
     lengths = d["lengths"].astype(np.int64)
@@ -63,6 +65,7 @@ class MotionLibrary:
   def frame(self, idx: torch.Tensor) -> dict:
     """Reference quantities at global frame indices (any shape)."""
     return {
+      **({"ceer_wrist": self.ceer_wrist[idx]} if self.ceer_wrist is not None else {}),
       "pos": self.root_pos[idx],
       "rot": quat_to_mat(self.root_quat[idx]),
       "quat": self.root_quat[idx],

@@ -1,0 +1,100 @@
+{
+  "checkpoint": "runs/exp02_teacher_seed0/ckpt_0002000.pt",
+  "rows": [
+    {
+      "start": "standing",
+      "force_N": 10,
+      "first_hold_height": 0.7040784955024719,
+      "first_hold_control_height": 0.7828412652015686,
+      "return_hold_height": 0.7037007808685303,
+      "return_control_height": 0.7827142477035522,
+      "failed": 0,
+      "passed": false
+    },
+    {
+      "start": "standing",
+      "force_N": 15,
+      "first_hold_height": 0.7054003477096558,
+      "first_hold_control_height": 0.7828412652015686,
+      "return_hold_height": 0.7823567390441895,
+      "return_control_height": 0.7827142477035522,
+      "failed": 0,
+      "passed": true
+    },
+    {
+      "start": "standing",
+      "force_N": 25,
+      "first_hold_height": 0.6976982355117798,
+      "first_hold_control_height": 0.7828412652015686,
+      "return_hold_height": 0.7807682752609253,
+      "return_control_height": 0.7827142477035522,
+      "failed": 0,
+      "passed": true
+    },
+    {
+      "start": "standing",
+      "force_N": 30,
+      "first_hold_height": 0.6999212503433228,
+      "first_hold_control_height": 0.7828412652015686,
+      "return_hold_height": 0.7813371419906616,
+      "return_control_height": 0.7827142477035522,
+      "failed": 0,
+      "passed": true
+    },
+    {
+      "start": "squatting",
+      "force_N": 10,
+      "first_hold_height": 0.7055438160896301,
+      "first_hold_control_height": 0.7060372829437256,
+      "return_hold_height": 0.7022358775138855,
+      "return_control_height": 0.7060095071792603,
+      "failed": 0,
+      "passed": false
+    },
+    {
+      "start": "squatting",
+      "force_N": 15,
+      "first_hold_height": 0.7826718091964722,
+      "first_hold_control_height": 0.7060338854789734,
+      "return_hold_height": 0.704205334186554,
+      "return_control_height": 0.7060061693191528,
+      "failed": 0,
+      "passed": true
+    },
+    {
+      "start": "squatting",
+      "force_N": 25,
+      "first_hold_height": 0.7819508910179138,
+      "first_hold_control_height": 0.7060338258743286,
+      "return_hold_height": 0.6997449994087219,
+      "return_control_height": 0.7060062289237976,
+      "failed": 0,
+      "passed": true
+    },
+    {
+      "start": "squatting",
+      "force_N": 30,
+      "first_hold_height": 0.7819108366966248,
+      "first_hold_control_height": 0.7060338258743286,
+      "return_hold_height": 0.7021594047546387,
+      "return_control_height": 0.7060062289237976,
+      "failed": 0,
+      "passed": true
+    }
+  ],
+  "passed_25N": true,
+  "all_magnitudes_passed": false,
+  "protocol": {
+    "first_pulse_s": [
+      1.0,
+      4.5
+    ],
+    "reverse_pulse_s": [
+      9.0,
+      12.5
+    ],
+    "total_s": 18.0,
+    "one_continuous_episode": true,
+    "four_deterministic_replicas": true
+  }
+}

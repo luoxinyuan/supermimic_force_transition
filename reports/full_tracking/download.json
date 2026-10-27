@@ -1,0 +1,49 @@
+{
+  "repo": "bones-studio/seed",
+  "revision": "2f59b2077b9da34dd4e43618e705c7cb962c9a66",
+  "verified": true,
+  "files": [
+    {
+      "path": "g1.tar.gz",
+      "size": 23499973647,
+      "expected_sha256": "52580ea8bced72ea9e2ff1e7b68f01c51c7f1099581e9a46b7c87e1dec106d8a",
+      "verified": true,
+      "sha256": "52580ea8bced72ea9e2ff1e7b68f01c51c7f1099581e9a46b7c87e1dec106d8a"
+    },
+    {
+      "path": "metadata/seed_metadata_v004.parquet",
+      "size": 4499876,
+      "expected_sha256": "7cbe5624f91ae19af3feee69cff74b2cf553fb26367c8edc4b674c3d8ea97e7d",
+      "verified": true,
+      "sha256": "7cbe5624f91ae19af3feee69cff74b2cf553fb26367c8edc4b674c3d8ea97e7d"
+    },
+    {
+      "path": "metadata/seed_metadata_v004.csv",
+      "size": 146411608,
+      "expected_sha256": "71d09422034946d17dbb0db027d569408c486545bdb12f7979d55e6ffd9bbc39",
+      "verified": true,
+      "sha256": "71d09422034946d17dbb0db027d569408c486545bdb12f7979d55e6ffd9bbc39"
+    },
+    {
+      "path": "metadata/seed_metadata_v002_temporal_labels.jsonl",
+      "size": 58447630,
+      "expected_sha256": "302da3c319bbed4f712fa22a4d71b5288493911140cd72579e29de2ac324d634",
+      "verified": true,
+      "sha256": "302da3c319bbed4f712fa22a4d71b5288493911140cd72579e29de2ac324d634"
+    },
+    {
+      "path": "README.md",
+      "size": 16901,
+      "expected_sha256": null,
+      "verified": true,
+      "sha256": "1a97246f811199ecd8193ff57d603a4f5229974ed874d99a930806c6a107747a"
+    },
+    {
+      "path": "LICENSE.md",
+      "size": 21781,
+      "expected_sha256": null,
+      "verified": true,
+      "sha256": "eb9b70b084e0a5dcda8465a4be2ba2f5b81e3c3800305c727777a3176defbc5f"
+    }
+  ]
+}

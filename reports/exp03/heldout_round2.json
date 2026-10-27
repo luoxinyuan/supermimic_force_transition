@@ -1,0 +1,64 @@
+{
+  "teacher": {
+    "failures": 0,
+    "episodes": 64,
+    "cases": {
+      "stand_to_squat": {
+        "height_change_m": -0.0812845230102539,
+        "no_force_endpoint_drift_m": 1.30385160446167e-07,
+        "force_height_m": 0.7015423774719238,
+        "no_force_height_m": 0.7828269004821777,
+        "failures": 0,
+        "passed": true
+      },
+      "squat_to_stand": {
+        "height_change_m": 0.07607966661453247,
+        "no_force_endpoint_drift_m": 7.078051567077637e-08,
+        "force_height_m": 0.7821106910705566,
+        "no_force_height_m": 0.7060310244560242,
+        "failures": 0,
+        "passed": true
+      }
+    }
+  },
+  "student": {
+    "failures": 6,
+    "episodes": 64,
+    "cases": {
+      "stand_to_squat": {
+        "height_change_m": -0.12746095657348633,
+        "no_force_endpoint_drift_m": 0.04408297687768936,
+        "force_height_m": 0.6152780055999756,
+        "no_force_height_m": 0.7427389621734619,
+        "failures": 6,
+        "passed": false
+      },
+      "squat_to_stand": {
+        "height_change_m": 0.00044035911560058594,
+        "no_force_endpoint_drift_m": 0.0020537301898002625,
+        "force_height_m": 0.7044177055358887,
+        "no_force_height_m": 0.7039773464202881,
+        "failures": 0,
+        "passed": false
+      }
+    },
+    "action_rmse": 0.43439409399495926,
+    "latent_rmse": 0.18988471356384523
+  },
+  "passed": false,
+  "checkpoint": "runs/exp03_refine/round2.pt",
+  "protocol": {
+    "seed": 18271,
+    "forces_N": [
+      15,
+      20,
+      25,
+      30
+    ],
+    "seconds": 10,
+    "randomized_onset_and_duration": true,
+    "noise": false,
+    "domain_randomization": false,
+    "independent_physical_replicas": false
+  }
+}

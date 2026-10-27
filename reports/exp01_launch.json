@@ -1,0 +1,10 @@
+{
+  "stage": "full_baseline_started_initial_compilation",
+  "pid": 3676870,
+  "gpu": 1,
+  "run": "runs/exp01_lafan40_seed0",
+  "budget_trainer_hours": 3,
+  "smoke_passed": true,
+  "resume_passed": true,
+  "tracking_quality_reproduced": false
+}

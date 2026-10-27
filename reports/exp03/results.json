@@ -1,0 +1,326 @@
+[
+  {
+    "teacher": {
+      "stand_to_squat": {
+        "no_force_height": 0.7828270196914673,
+        "force_height": 0.6996827721595764,
+        "height_change": -0.08314424753189087,
+        "falls": 0,
+        "passed": true
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7060309052467346,
+        "force_height": 0.7818753719329834,
+        "height_change": 0.07584446668624878,
+        "falls": 0,
+        "passed": true
+      }
+    },
+    "student": {
+      "stand_to_squat": {
+        "no_force_height": 0.6858049035072327,
+        "force_height": 0.6488737463951111,
+        "height_change": -0.03693115711212158,
+        "falls": 0,
+        "passed": false
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.6870198249816895,
+        "force_height": 0.6861807107925415,
+        "height_change": -0.0008391141891479492,
+        "falls": 0,
+        "passed": false
+      }
+    },
+    "round": 0,
+    "passed": false
+  },
+  {
+    "teacher": {
+      "stand_to_squat": {
+        "no_force_height": 0.7828270196914673,
+        "force_height": 0.6995914578437805,
+        "height_change": -0.08323556184768677,
+        "falls": 0,
+        "passed": true
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7060309052467346,
+        "force_height": 0.7818737626075745,
+        "height_change": 0.07584285736083984,
+        "falls": 0,
+        "passed": true
+      }
+    },
+    "student": {
+      "stand_to_squat": {
+        "no_force_height": 0.7817935347557068,
+        "force_height": 0.7818057537078857,
+        "height_change": 1.2218952178955078e-05,
+        "falls": 0,
+        "passed": false
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7242816090583801,
+        "force_height": 0.709790050983429,
+        "height_change": -0.014491558074951172,
+        "falls": 0,
+        "passed": false
+      }
+    },
+    "round": 1,
+    "passed": false
+  },
+  {
+    "teacher": {
+      "stand_to_squat": {
+        "no_force_height": 0.7828269004821777,
+        "force_height": 0.6995267271995544,
+        "height_change": -0.08330017328262329,
+        "falls": 0,
+        "passed": true
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7060310244560242,
+        "force_height": 0.7818712592124939,
+        "height_change": 0.07584023475646973,
+        "falls": 0,
+        "passed": true
+      }
+    },
+    "student": {
+      "stand_to_squat": {
+        "no_force_height": 0.7633181214332581,
+        "force_height": 0.6555766463279724,
+        "height_change": -0.10774147510528564,
+        "falls": 0,
+        "passed": true
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.703977644443512,
+        "force_height": 0.7044849395751953,
+        "height_change": 0.0005072951316833496,
+        "falls": 0,
+        "passed": false
+      }
+    },
+    "round": 2,
+    "passed": false
+  },
+  {
+    "teacher": {
+      "stand_to_squat": {
+        "no_force_height": 0.7828270196914673,
+        "force_height": 0.6996198892593384,
+        "height_change": -0.0832071304321289,
+        "falls": 0,
+        "passed": true
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7060317993164062,
+        "force_height": 0.7818757891654968,
+        "height_change": 0.07584398984909058,
+        "falls": 0,
+        "passed": true
+      }
+    },
+    "student": {
+      "stand_to_squat": {
+        "no_force_height": 0.7820371985435486,
+        "force_height": 0.7821728587150574,
+        "height_change": 0.00013566017150878906,
+        "falls": 0,
+        "passed": false
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.6007745265960693,
+        "force_height": 0.678027868270874,
+        "height_change": 0.07725334167480469,
+        "falls": 0,
+        "passed": true
+      }
+    },
+    "round": 3,
+    "passed": false
+  },
+  {
+    "teacher": {
+      "stand_to_squat": {
+        "no_force_height": 0.7828270196914673,
+        "force_height": 0.6996238827705383,
+        "height_change": -0.08320313692092896,
+        "falls": 0,
+        "passed": true
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7060309052467346,
+        "force_height": 0.7818756103515625,
+        "height_change": 0.07584470510482788,
+        "falls": 0,
+        "passed": true
+      }
+    },
+    "student": {
+      "stand_to_squat": {
+        "no_force_height": 0.7471727728843689,
+        "force_height": 0.6543405055999756,
+        "height_change": -0.09283226728439331,
+        "falls": 12,
+        "passed": false
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.704185962677002,
+        "force_height": 0.7040261030197144,
+        "height_change": -0.00015985965728759766,
+        "falls": 0,
+        "passed": false
+      }
+    },
+    "round": 4,
+    "passed": false
+  },
+  {
+    "teacher": {
+      "stand_to_squat": {
+        "no_force_height": 0.7828269004821777,
+        "force_height": 0.6996496319770813,
+        "height_change": -0.08317726850509644,
+        "falls": 0,
+        "passed": true
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7060309052467346,
+        "force_height": 0.7818754315376282,
+        "height_change": 0.07584452629089355,
+        "falls": 0,
+        "passed": true
+      }
+    },
+    "student": {
+      "stand_to_squat": {
+        "no_force_height": 0.7840771675109863,
+        "force_height": 0.7840861678123474,
+        "height_change": 9.000301361083984e-06,
+        "falls": 0,
+        "passed": false
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.6093460321426392,
+        "force_height": 0.6362690329551697,
+        "height_change": 0.026923000812530518,
+        "falls": 0,
+        "passed": false
+      }
+    },
+    "round": 5,
+    "passed": false
+  },
+  {
+    "teacher": {
+      "stand_to_squat": {
+        "no_force_height": 0.7828270196914673,
+        "force_height": 0.6996806263923645,
+        "height_change": -0.08314639329910278,
+        "falls": 0,
+        "passed": true
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7060310244560242,
+        "force_height": 0.7818775773048401,
+        "height_change": 0.07584655284881592,
+        "falls": 0,
+        "passed": true
+      }
+    },
+    "student": {
+      "stand_to_squat": {
+        "no_force_height": 0.7846245765686035,
+        "force_height": 0.7812123894691467,
+        "height_change": -0.003412187099456787,
+        "falls": 8,
+        "passed": false
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7139007449150085,
+        "force_height": 0.7107157111167908,
+        "height_change": -0.0031850337982177734,
+        "falls": 0,
+        "passed": false
+      }
+    },
+    "round": 6,
+    "passed": false
+  },
+  {
+    "teacher": {
+      "stand_to_squat": {
+        "no_force_height": 0.7828270196914673,
+        "force_height": 0.699658215045929,
+        "height_change": -0.08316880464553833,
+        "falls": 0,
+        "passed": true
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7060309052467346,
+        "force_height": 0.7818753719329834,
+        "height_change": 0.07584446668624878,
+        "falls": 0,
+        "passed": true
+      }
+    },
+    "student": {
+      "stand_to_squat": {
+        "no_force_height": 0.7388267517089844,
+        "force_height": 0.7199559211730957,
+        "height_change": -0.018870830535888672,
+        "falls": 21,
+        "passed": false
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.772115170955658,
+        "force_height": 0.7262921929359436,
+        "height_change": -0.045822978019714355,
+        "falls": 27,
+        "passed": false
+      }
+    },
+    "round": 7,
+    "passed": false
+  },
+  {
+    "teacher": {
+      "stand_to_squat": {
+        "no_force_height": 0.7828270196914673,
+        "force_height": 0.6996203660964966,
+        "height_change": -0.0832066535949707,
+        "falls": 0,
+        "passed": true
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7060309052467346,
+        "force_height": 0.7818714380264282,
+        "height_change": 0.0758405327796936,
+        "falls": 0,
+        "passed": true
+      }
+    },
+    "student": {
+      "stand_to_squat": {
+        "no_force_height": 0.783919095993042,
+        "force_height": 0.7819535136222839,
+        "height_change": -0.0019655823707580566,
+        "falls": 8,
+        "passed": false
+      },
+      "squat_to_stand": {
+        "no_force_height": 0.7753955125808716,
+        "force_height": 0.6092174649238586,
+        "height_change": -0.16617804765701294,
+        "falls": 32,
+        "passed": false
+      }
+    },
+    "round": 8,
+    "passed": false
+  }
+]

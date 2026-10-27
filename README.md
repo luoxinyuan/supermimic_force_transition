@@ -1,3 +1,20 @@
+# Force-guided transitions and CEER-style SuperMimic tracking
+
+This workspace extends [dhmbb2/supermimic_vibe](https://github.com/dhmbb2/supermimic_vibe), based on upstream commit `072f091`, with force-aware Teacher/Student experiments and full BONES tracking through a sparse CEER-style root/hand command interface.
+
+- [CEER-style full-data training and interface](experiments/ceer_full/README.md)
+- [Current full-data run report](reports/CEER_FULL_TRAINING.md)
+- [Experiment 1: LAFAN1 baseline](reports/EXPERIMENT_01.md)
+- [Experiment 2: force-aware Teacher](reports/EXPERIMENT_02.md)
+- [Experiment 3: sensorless Student, currently unsuccessful](reports/EXPERIMENT_03.md)
+- [Pinned BONES download and verification](experiments/full_tracking/download.py)
+
+Data, checkpoints, environments, tokens and runtime logs are excluded from Git. Download BONES separately with an authorized Hugging Face account. The CEER-style model retains SuperMimic BPTT and its own actor; it does not load the original CEER weights. Full-data training is in progress, not a completed tracking-quality result.
+
+The original upstream documentation follows.
+
+---
+
 # SuperMimic, re-implemented
 
 An unofficial reproduction of *SuperMimic: Scaling Humanoid Whole-Body Control with One

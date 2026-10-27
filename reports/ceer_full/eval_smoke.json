@@ -1,0 +1,10 @@
+{
+  "norm_return": 0.0024094092659652233,
+  "norm_return_frame_weighted": 0.0022606058046221733,
+  "failed": 4,
+  "num_clips": 4,
+  "eval_seconds": 23.488752126693726,
+  "interface": "ceer",
+  "execution_passed": true,
+  "untrained_smoke_only": true
+}

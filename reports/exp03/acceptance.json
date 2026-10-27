@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "sensorless_interface_passed": true,
+  "behavior_passed": false,
+  "teacher_unchanged": true,
+  "completed_training_rounds": 13,
+  "collected_transitions": 416000,
+  "student_checkpoint": "runs/exp03_refine/last.pt",
+  "sha256": "2f3f01592e0a49628681c4030e8d1acdcb371b33cb2a3a440069900d0fe2bf2d",
+  "failures": 32,
+  "episodes": 64,
+  "hardware_validated": false
+}

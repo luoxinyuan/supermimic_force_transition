@@ -1,0 +1,10 @@
+{
+  "ready": true,
+  "raw_clips": 142220,
+  "filtered_clips": 128904,
+  "frames": 47032428,
+  "hours": 261.2912666666667,
+  "motions": "data/processed/bones_seed_filtered_50hz.npz",
+  "cache": "data/processed/bones_seed_filtered_50hz.npz.ceer_wrist.npy",
+  "source_revision": "2f59b2077b9da34dd4e43618e705c7cb962c9a66"
+}

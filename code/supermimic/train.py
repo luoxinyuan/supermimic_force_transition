@@ -28,6 +28,8 @@ from .task import GOAL_FRAME_DIM, NJ, OBS_DIM, XI_DIM, TaskCfg, flat_to_state, s
 
 @dataclasses.dataclass
 class TrainCfg:
+  command_interface: str = "full"
+  sim_compile: bool = True
   motions: str = "data/processed/lafan1_50hz.npz"
   clip_prefixes: str = ""  # e.g. "walk,run,sprint" for the Fig. 4b subset
   out: str = "runs/debug"
@@ -117,14 +119,15 @@ class Trainer:
       torch.backends.cudnn.allow_tf32 = True
     networks.AMP["enabled"] = cfg.amp
     self.lib = MotionLibrary(cfg.motions, device, prefixes=cfg.clip_prefixes)
-    self.tcfg = TaskCfg()
+    self.tcfg = TaskCfg(future=1) if cfg.command_interface == "ceer" else TaskCfg()
     self.env = self._make_env()
     self.task = self.env.task
-    self.task.compile_sizes |= {cfg.wm_batch, cfg.pi_batch}
+    if cfg.sim_compile:
+      self.task.compile_sizes |= {cfg.wm_batch, cfg.pi_batch}
     s = self.env.reset()
     self.feat_dim = self.task.state_features(s).shape[-1]
     self.obs_dim = OBS_DIM * self.tcfg.history
-    self.goal_dim = GOAL_FRAME_DIM * self.tcfg.future
+    self.goal_dim = getattr(self.task, "goal_dim", GOAL_FRAME_DIM * self.tcfg.future)
     self.wm = WorldModel(self.task, self.feat_dim, XI_DIM).to(device)
     self.policy = Policy(self.obs_dim, self.goal_dim).to(device)
     self.critic_in = self.feat_dim + self.goal_dim + XI_DIM + 1
@@ -161,7 +164,7 @@ class Trainer:
       self.load(cfg.resume)
 
   def _make_env(self):
-    return TrackingSimEnv(self.lib, EnvCfg(num_envs=self.cfg.num_envs), self.tcfg, self.device, gamma=self.cfg.gamma)
+    return TrackingSimEnv(self.lib, EnvCfg(num_envs=self.cfg.num_envs, command_interface=self.cfg.command_interface, compile=self.cfg.sim_compile), self.tcfg, self.device, gamma=self.cfg.gamma)
 
   def _make_buffer(self):
     return ReplayBuffer(self.cfg.num_envs, self.cfg.buffer_steps, XI_DIM, self.device)
@@ -325,7 +328,8 @@ class Trainer:
       return {k: v[:, t] for k, v in ref.items()}
 
     def ref_future(t):
-      return {k: v[:, t + 1 : t + 1 + K] for k, v in ref.items()}
+      offset = 0 if cfg.command_interface == "ceer" else 1
+      return {k: v[:, t + offset : t + offset + K] for k, v in ref.items()}
 
     def ref_kin_at(t):
       return tuple(x[:, t] for x in ref_kin)
@@ -418,8 +422,14 @@ class Trainer:
 
   def run(self):
     cfg = self.cfg
-    if self.it == 0:
-      for _ in range(cfg.warmup_steps):
+    # Checkpoints restore networks/optimizers, but not simulator state or replay.
+    # Refill fresh replay on resume before sampling k-step training windows.
+    if self.rank == 0:
+      done_path = os.path.join(cfg.out, "DONE")
+      if os.path.exists(done_path):
+        os.remove(done_path)
+    if self.buf.size < max(cfg.warmup_steps, cfg.k):
+      for _ in range(max(cfg.warmup_steps, cfg.k) - self.buf.size):
         self.collect()
     t_last = time.time()
     agg = {}
@@ -530,7 +540,7 @@ class Trainer:
       else:
         self.eval_clip_ids = torch.arange(self.lib.num_clips, device=self.device)
       n = min(cfg.eval_envs, len(self.eval_clip_ids))
-      self.eval_env = make_eval_env(self.lib, n, self.device)
+      self.eval_env = make_eval_env(self.lib, n, self.device, command_interface=cfg.command_interface)
     t0 = time.time()
     self.policy.eval()
     res = evaluate(lambda o, g: self.policy(o, g), self.lib, self.eval_env, self.eval_clip_ids)

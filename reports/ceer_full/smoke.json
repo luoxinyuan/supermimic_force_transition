@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "ranks": 3,
+  "iterations": 10,
+  "updates": 4,
+  "goal_dim": 18,
+  "obs_dim": 930,
+  "full_reference_joint_input_absent": true,
+  "reference_xy_input_absent": true,
+  "sim_imagination_commands_equal": true,
+  "policy_parameters_updated": true,
+  "parameters_synchronized": true,
+  "lr_synchronized": true
+}

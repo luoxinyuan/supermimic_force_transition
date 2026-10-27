@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "zero_force_action_max_difference": 0.0,
+  "force_encoder_gradient_l1": 13.02749088674318,
+  "world_model_action_gradient_norm": 1.1157100200653076,
+  "force_input_gradient_l1": 0.0036483865696936846,
+  "frozen_decoder": true
+}
